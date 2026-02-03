@@ -1,0 +1,419 @@
+/* Component Library */
+
+/* Section Card */
+.section-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-10);
+  margin-bottom: var(--space-10);
+  backdrop-filter: blur(10px);
+  transition: all var(--transition-base);
+}
+
+.section-card:hover {
+  background: var(--bg-card-hover);
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  margin-bottom: var(--space-8);
+  padding-bottom: var(--space-5);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.section-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: var(--gradient-primary);
+  border-radius: var(--radius-md);
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  flex-shrink: 0;
+}
+
+.section-header-content {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex: 1;
+}
+
+.section-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.section-header h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: var(--text-3xl);
+}
+
+/* Section Hint */
+.section-hint {
+  padding: var(--space-4) var(--space-5);
+  background: var(--accent-cyan-bg);
+  border: 1px solid var(--accent-cyan-border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-6);
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+}
+
+.section-hint strong {
+  color: var(--accent-cyan-light);
+}
+
+/* Subsection */
+.subsection {
+  margin-bottom: var(--space-10);
+}
+
+.subsection:last-child {
+  margin-bottom: 0;
+}
+
+.subsection-title {
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+  padding-left: var(--space-4);
+  border-left: 3px solid var(--accent-purple);
+}
+
+/* Exercise Grid Layouts */
+.exercise-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.grid-1col {
+  grid-template-columns: 1fr;
+}
+
+.grid-2col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Exercise Item */
+.exercise-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.exercise-item:hover {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: var(--accent-purple-border);
+}
+
+.exercise-item label {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-secondary);
+  font-size: var(--text-base);
+  cursor: text;
+  flex-wrap: wrap;
+}
+
+.exercise-number {
+  color: var(--text-hint);
+  font-size: var(--text-sm);
+  min-width: 32px;
+  flex-shrink: 0;
+}
+
+.exercise-hint {
+  color: var(--text-hint);
+  font-size: var(--text-sm);
+  margin-left: var(--space-1);
+}
+
+/* Input Fields */
+.exercise-input {
+  flex: 1;
+  min-width: 200px;
+  padding: var(--space-2) var(--space-3);
+  background: var(--bg-input);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: var(--text-base);
+  transition: all var(--transition-base);
+}
+
+.exercise-input:focus {
+  background: var(--bg-input-focus);
+  border-color: var(--accent-purple);
+  box-shadow: var(--shadow-focus);
+}
+
+.exercise-input::placeholder {
+  color: var(--text-hint);
+}
+
+/* Small Input Variant */
+.exercise-input.small {
+  min-width: 120px;
+  max-width: 150px;
+  flex: 0 0 auto;
+}
+
+/* Inline Input Variant */
+.exercise-input.inline {
+  min-width: 80px;
+  max-width: 100px;
+  padding: var(--space-1) var(--space-2);
+  flex: 0 0 auto;
+}
+
+/* Answer States */
+.exercise-item.correct {
+  background: var(--success-bg);
+  border-color: var(--success-border);
+}
+
+.exercise-item.correct .exercise-input {
+  border-color: var(--success);
+  background: rgba(75, 236, 155, 0.05);
+}
+
+.exercise-item.incorrect {
+  background: var(--error-bg);
+  border-color: var(--error-border);
+}
+
+.exercise-item.incorrect .exercise-input {
+  border-color: var(--error);
+  background: rgba(236, 75, 91, 0.05);
+}
+
+.exercise-item.unanswered {
+  background: var(--warning-bg);
+  border-color: var(--warning-border);
+}
+
+/* Correct Answer Display */
+.correct-answer {
+  display: none;
+  font-size: var(--text-sm);
+  color: var(--success);
+  margin-top: var(--space-1);
+  padding-left: 32px;
+}
+
+.exercise-item.incorrect .correct-answer {
+  display: block;
+}
+
+/* Result Icon */
+.result-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: none;
+}
+
+.exercise-item.correct .result-icon.correct-icon,
+.exercise-item.incorrect .result-icon.incorrect-icon {
+  display: block;
+}
+
+.result-icon.correct-icon {
+  color: var(--success);
+}
+
+.result-icon.incorrect-icon {
+  color: var(--error);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+
+.badge.masculine {
+  background: var(--accent-blue-bg);
+  border: 1px solid var(--accent-blue-border);
+  color: var(--accent-blue-light);
+}
+
+.badge.feminine {
+  background: var(--accent-pink-bg);
+  border: 1px solid var(--accent-pink-border);
+  color: var(--accent-pink-light);
+}
+
+.badge.neuter {
+  background: var(--accent-cyan-bg);
+  border: 1px solid var(--accent-cyan-border);
+  color: var(--accent-cyan-light);
+}
+
+/* Callout Boxes */
+.callout {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-6);
+}
+
+.callout svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.callout.exam-tip {
+  background: var(--accent-yellow-bg);
+  border: 1px solid var(--accent-yellow-border);
+}
+
+.callout.exam-tip svg {
+  color: var(--accent-yellow);
+}
+
+.callout.key-insight {
+  background: var(--accent-purple-bg);
+  border: 1px solid var(--accent-purple-border);
+}
+
+.callout.key-insight svg {
+  color: var(--accent-purple);
+}
+
+/* Button Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-base);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.btn.btn-secondary {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+}
+
+.btn.btn-secondary:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent-purple-border);
+  box-shadow: none;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: var(--space-16) var(--space-6);
+  color: var(--text-muted);
+}
+
+.empty-state svg {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-4);
+  color: var(--text-hint);
+}
+
+.empty-state h3 {
+  font-size: var(--text-xl);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-2);
+}
+
+.empty-state p {
+  font-size: var(--text-base);
+  margin-bottom: 0;
+}
+
+/* Loading State */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-16);
+  color: var(--text-muted);
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--glass-border);
+  border-top-color: var(--accent-purple);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: var(--space-4);
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Fade-in Animation */
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

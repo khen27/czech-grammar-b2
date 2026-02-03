@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "title": "Czech Genitive Practice Worksheet",
+    "level": "B2",
+    "totalExercises": 248,
+    "version": "1.0",
+    "created": "2025-02-03"
+  },
+  "parts": [
+    {
+      "id": "A",
+      "title": "Translate to Czech",
+      "icon": "languages",
+      "subsections": [
+        {
+          "title": "Original (1–20)",
+          "layout": "grid-2col",
+          "exercises": [
+            { "id": "a1", "number": 1, "prompt": "without sugar", "answer": "bez cukru" },
+            { "id": "a2", "number": 2, "prompt": "without salt", "answer": "bez soli" },
+            { "id": "a3", "number": 3, "prompt": "without milk", "answer": "bez mléka" },
+            { "id": "a4", "number": 4, "prompt": "without a car", "answer": "bez auta" },
+            { "id": "a5", "number": 5, "prompt": "without a phone", "answer": "bez telefonu" },
+            { "id": "a6", "number": 6, "prompt": "from Prague", "answer": "z Prahy" },
+            { "id": "a7", "number": 7, "prompt": "from Brno", "answer": "z Brna" },
+            { "id": "a8", "number": 8, "prompt": "from the city", "answer": "z města" },
+            { "id": "a9", "number": 9, "prompt": "from the office", "answer": "z kanceláře" },
+            { "id": "a10", "number": 10, "prompt": "from the restaurant", "answer": "z restaurace" },
+            { "id": "a11", "number": 11, "prompt": "to Prague (movement)", "answer": "do Prahy" },
+            { "id": "a12", "number": 12, "prompt": "to Brno (movement)", "answer": "do Brna" },
+            { "id": "a13", "number": 13, "prompt": "to work (movement)", "answer": "do práce" },
+            { "id": "a14", "number": 14, "prompt": "to school (movement)", "answer": "do školy" },
+            { "id": "a15", "number": 15, "prompt": "to the city center", "answer": "do centra města" },
+            { "id": "a16", "number": 16, "prompt": "at the doctor's", "answer": "u doktora" },
+            { "id": "a17", "number": 17, "prompt": "at my friend's", "answer": "u kamaráda" },
+            { "id": "a18", "number": 18, "prompt": "at mom's", "answer": "u mámy" },
+            { "id": "a19", "number": 19, "prompt": "from the doctor", "answer": "od doktora" },
+            { "id": "a20", "number": 20, "prompt": "from my friend", "answer": "od kamaráda" }
+          ]
+        },
+        {
+          "title": "Tricky (21–40)",
+          "layout": "grid-2col",
+          "exercises": [
+            { "id": "a21", "number": 21, "prompt": "without any money", "answer": "bez peněz" },
+            { "id": "a22", "number": 22, "prompt": "without my ID", "answer": "bez mého průkazu" },
+            { "id": "a23", "number": 23, "prompt": "without a reason", "answer": "bez důvodu" },
+            { "id": "a24", "number": 24, "prompt": "from the airport", "answer": "z letiště" },
+            { "id": "a25", "number": 25, "prompt": "from the train station", "answer": "z nádraží" },
+            { "id": "a26", "number": 26, "prompt": "from the gym", "answer": "z posilovny" },
+            { "id": "a27", "number": 27, "prompt": "to the airport", "answer": "na letiště" },
+            { "id": "a28", "number": 28, "prompt": "to the train station", "answer": "na nádraží" },
+            { "id": "a29", "number": 29, "prompt": "into the room", "answer": "do pokoje" },
+            { "id": "a30", "number": 30, "prompt": "out of the house", "answer": "z domu" },
+            { "id": "a31", "number": 31, "prompt": "at the boss's", "answer": "u šéfa" },
+            { "id": "a32", "number": 32, "prompt": "at the dentist's", "answer": "u zubního" },
+            { "id": "a33", "number": 33, "prompt": "from the dentist", "answer": "od zubního" },
+            { "id": "a34", "number": 34, "prompt": "from my parents'", "answer": "od rodičů" },
+            { "id": "a35", "number": 35, "prompt": "without a problem", "answer": "bez problému" },
+            { "id": "a36", "number": 36, "prompt": "without time", "answer": "bez času" },
+            { "id": "a37", "number": 37, "prompt": "from middle of city", "answer": "ze středu města" },
+            { "id": "a38", "number": 38, "prompt": "to center of Prague", "answer": "do centra Prahy" },
+            { "id": "a39", "number": 39, "prompt": "from Czech Republic", "answer": "z České republiky" },
+            { "id": "a40", "number": 40, "prompt": "to Czech Republic", "answer": "do České republiky" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Fill the Correct Preposition",
+      "icon": "route",
+      "hint": "Use only: bez / do / z / od / u",
+      "subsections": [
+        {
+          "title": "Original (1–10)",
+          "layout": "grid-2col",
+          "exercises": [
+            { "id": "b1", "number": 1, "prompt": "Jdu ___ práce.", "answer": "do", "inputType": "inline" },
+            { "id": "b2", "number": 2, "prompt": "Jsem ___ doktora.", "answer": "u", "inputType": "inline" },
+            { "id": "b3", "number": 3, "prompt": "Jdu ___ doktora.", "answer": "od", "inputType": "inline" },
+            { "id": "b4", "number": 4, "prompt": "Jsem ___ Prahy.", "answer": "z", "inputType": "inline" },
+            { "id": "b5", "number": 5, "prompt": "Jdu ___ Prahy.", "answer": "do", "inputType": "inline" },
+            { "id": "b6", "number": 6, "prompt": "Jdu ___ kamaráda.", "answer": "k", "inputType": "inline" },
+            { "id": "b7", "number": 7, "prompt": "Jdu ___ kamaráda.", "hint": "(from)", "answer": "od", "inputType": "inline" },
+            { "id": "b8", "number": 8, "prompt": "Čaj ___ cukru.", "answer": "bez", "inputType": "inline" },
+            { "id": "b9", "number": 9, "prompt": "Voda ___ kohoutku.", "answer": "z", "inputType": "inline" },
+            { "id": "b10", "number": 10, "prompt": "Jdu ___ obchodu.", "answer": "do", "inputType": "inline" }
+          ]
+        },
+        {
+          "title": "Tricky (11–20)",
+          "layout": "grid-2col",
+          "exercises": [
+            { "id": "b11", "number": 11, "prompt": "Jsem ___ mámy.", "answer": "u", "inputType": "inline" },
+            { "id": "b12", "number": 12, "prompt": "Jdu ___ mámy.", "answer": "k", "inputType": "inline" },
+            { "id": "b13", "number": 13, "prompt": "Jdu ___ mámy.", "hint": "(from)", "answer": "od", "inputType": "inline" },
+            { "id": "b14", "number": 14, "prompt": "Jsem ___ práce.", "answer": "v", "inputType": "inline" },
+            { "id": "b15", "number": 15, "prompt": "Jdu ___ práce.", "hint": "(from)", "answer": "z", "inputType": "inline" },
+            { "id": "b16", "number": 16, "prompt": "Jsem ___ hotelu.", "answer": "v", "inputType": "inline" },
+            { "id": "b17", "number": 17, "prompt": "Vracím se ___ restaurace.", "answer": "z", "inputType": "inline" },
+            { "id": "b18", "number": 18, "prompt": "Voda je ___ lednice.", "answer": "z", "inputType": "inline" },
+            { "id": "b19", "number": 19, "prompt": "Jdu ___ centra.", "answer": "do", "inputType": "inline" },
+            { "id": "b20", "number": 20, "prompt": "Jdu ___ centra města.", "answer": "z", "inputType": "inline" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Movement or Location?",
+      "icon": "shuffle",
+      "hint": "Write: movement or location",
+      "subsections": [
+        {
+          "title": "Original (1–10)",
+          "layout": "grid-2col",
+          "exercises": [
+            { "id": "c1", "number": 1, "prompt": "jdu do práce", "answer": "movement" },
+            { "id": "c2", "number": 2, "prompt": "jsem v práci", "answer": "location" },
+            { "id": "c3", "number": 3, "prompt": "jdu do školy", "answer": "movement" },
+            { "id": "c4", "number": 4, "prompt": "jsem ve škole", "answer": "location" },
+            { "id": "c5", "number": 5, "prompt": "jdu do restaurace", "answer": "movement" },
+            { "id": "c6", "number": 6, "prompt": "jsem v restauraci", "answer": "location" },
+            { "id": "c7", "number": 7, "prompt": "jsem u kamaráda", "answer": "location" },
+            { "id": "c8", "number": 8, "prompt": "jdu ke kamarádovi", "answer": "movement" },
+            { "id": "c9", "number": 9, "prompt": "jsem u doktora", "answer": "location" },
+            { "id": "c10", "number": 10, "prompt": "jdu k doktorovi", "answer": "movement" }
+          ]
+        },
+        {
+          "title": "Tricky (11–20)",
+          "layout": "grid-2col",
+          "exercises": [
+            { "id": "c11", "number": 11, "prompt": "jsem z práce", "answer": "location" },
+            { "id": "c12", "number": 12, "prompt": "jdu z práce", "answer": "movement" },
+            { "id": "c13", "number": 13, "prompt": "jsem z Prahy", "answer": "location" },
+            { "id": "c14", "number": 14, "prompt": "jdu do Prahy", "answer": "movement" },
+            { "id": "c15", "number": 15, "prompt": "jsem u sebe", "answer": "location" },
+            { "id": "c16", "number": 16, "prompt": "jdu do centra", "answer": "movement" },
+            { "id": "c17", "number": 17, "prompt": "jsem v centru", "answer": "location" },
+            { "id": "c18", "number": 18, "prompt": "jsem u nádraží", "answer": "location" },
+            { "id": "c19", "number": 19, "prompt": "jdu do nemocnice", "answer": "movement" },
+            { "id": "c20", "number": 20, "prompt": "jsem v nemocnici", "answer": "location" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Fill the Correct Form",
+      "icon": "calculator",
+      "subsections": [
+        {
+          "title": "Original (1–20)",
+          "layout": "grid-3col",
+          "exercises": [
+            { "id": "d1", "number": 1, "prompt": "pět ___", "hint": "(student)", "answer": "studentů", "inputType": "small" },
+            { "id": "d2", "number": 2, "prompt": "šest ___", "hint": "(doktor)", "answer": "doktorů", "inputType": "small" },
+            { "id": "d3", "number": 3, "prompt": "deset ___", "hint": "(autobus)", "answer": "autobusů", "inputType": "small" },
+            { "id": "d4", "number": 4, "prompt": "osm ___", "hint": "(auto)", "answer": "aut", "inputType": "small" },
+            { "id": "d5", "number": 5, "prompt": "pět ___", "hint": "(město)", "answer": "měst", "inputType": "small" },
+            { "id": "d6", "number": 6, "prompt": "tři ___", "hint": "(kamarád)", "answer": "kamarádi", "inputType": "small" },
+            { "id": "d7", "number": 7, "prompt": "čtyři ___", "hint": "(hodina)", "answer": "hodiny", "inputType": "small" },
+            { "id": "d8", "number": 8, "prompt": "pět ___", "hint": "(hodina)", "answer": "hodin", "inputType": "small" },
+            { "id": "d9", "number": 9, "prompt": "pět ___", "hint": "(minuta)", "answer": "minut", "inputType": "small" },
+            { "id": "d10", "number": 10, "prompt": "deset ___", "hint": "(koruna)", "answer": "korun", "inputType": "small" },
+            { "id": "d11", "number": 11, "prompt": "hodně ___", "hint": "(peníze)", "answer": "peněz", "inputType": "small" },
+            { "id": "d12", "number": 12, "prompt": "málo ___", "hint": "(čas)", "answer": "času", "inputType": "small" },
+            { "id": "d13", "number": 13, "prompt": "trochu ___", "hint": "(voda)", "answer": "vody", "inputType": "small" },
+            { "id": "d14", "number": 14, "prompt": "spousta ___", "hint": "(práce)", "answer": "práce", "inputType": "small" },
+            { "id": "d15", "number": 15, "prompt": "několik ___", "hint": "(den)", "answer": "dní", "inputType": "small" },
+            { "id": "d16", "number": 16, "prompt": "několik ___", "hint": "(týden)", "answer": "týdnů", "inputType": "small" },
+            { "id": "d17", "number": 17, "prompt": "hodně ___", "hint": "(lidí)", "answer": "lidí", "inputType": "small" },
+            { "id": "d18", "number": 18, "prompt": "málo ___", "hint": "(lidí)", "answer": "lidí", "inputType": "small" },
+            { "id": "d19", "number": 19, "prompt": "trochu ___", "hint": "(cukr)", "answer": "cukru", "inputType": "small" },
+            { "id": "d20", "number": 20, "prompt": "hodně ___", "hint": "(jídlo)", "answer": "jídla", "inputType": "small" }
+          ]
+        },
+        {
+          "title": "Tricky (21–40)",
+          "layout": "grid-3col",
+          "exercises": [
+            { "id": "d21", "number": 21, "prompt": "pět ___", "hint": "(žena)", "answer": "žen", "inputType": "small" },
+            { "id": "d22", "number": 22, "prompt": "pět ___", "hint": "(dítě)", "answer": "dětí", "inputType": "small" },
+            { "id": "d23", "number": 23, "prompt": "pět ___", "hint": "(člověk)", "answer": "lidí", "inputType": "small" },
+            { "id": "d24", "number": 24, "prompt": "deset ___", "hint": "(rok)", "answer": "let", "inputType": "small" },
+            { "id": "d25", "number": 25, "prompt": "několik ___", "hint": "(minuta)", "answer": "minut", "inputType": "small" },
+            { "id": "d26", "number": 26, "prompt": "spousta ___", "hint": "(věc)", "answer": "věcí", "inputType": "small" },
+            { "id": "d27", "number": 27, "prompt": "hodně ___", "hint": "(informace)", "answer": "informací", "inputType": "small" },
+            { "id": "d28", "number": 28, "prompt": "málo ___", "hint": "(energie)", "answer": "energie", "inputType": "small" },
+            { "id": "d29", "number": 29, "prompt": "trochu ___", "hint": "(mléko)", "answer": "mléka", "inputType": "small" },
+            { "id": "d30", "number": 30, "prompt": "hodně ___", "hint": "(kafe)", "answer": "kafe", "inputType": "small" },
+            { "id": "d31", "number": 31, "prompt": "pět ___", "hint": "(okno)", "answer": "oken", "inputType": "small" },
+            { "id": "d32", "number": 32, "prompt": "pět ___", "hint": "(místo)", "answer": "míst", "inputType": "small" },
+            { "id": "d33", "number": 33, "prompt": "deset ___", "hint": "(pivo)", "answer": "piv", "inputType": "small" },
+            { "id": "d34", "number": 34, "prompt": "několik ___", "hint": "(město)", "answer": "měst", "inputType": "small" },
+            { "id": "d35", "number": 35, "prompt": "málo ___", "hint": "(sůl)", "answer": "soli", "inputType": "small" },
+            { "id": "d36", "number": 36, "prompt": "trochu ___", "hint": "(chléb)", "answer": "chleba", "inputType": "small" },
+            { "id": "d37", "number": 37, "prompt": "spousta ___", "hint": "(problém)", "answer": "problémů", "inputType": "small" },
+            { "id": "d38", "number": 38, "prompt": "hodně ___", "hint": "(otázka)", "answer": "otázek", "inputType": "small" },
+            { "id": "d39", "number": 39, "prompt": "několik ___", "hint": "(student)", "answer": "studentů", "inputType": "small" },
+            { "id": "d40", "number": 40, "prompt": "pět ___", "hint": "(pes)", "answer": "psů", "inputType": "small" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "title": "Make the Full Phrase",
+      "icon": "package",
+      "subsections": [
+        {
+          "title": "Original (1–10)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "e1", "number": 1, "prompt": "a bottle of water", "answer": "láhev vody" },
+            { "id": "e2", "number": 2, "prompt": "a bottle of wine", "answer": "láhev vína" },
+            { "id": "e3", "number": 3, "prompt": "a glass of water", "answer": "sklenice vody" },
+            { "id": "e4", "number": 4, "prompt": "a cup of coffee", "answer": "šálek kávy" },
+            { "id": "e5", "number": 5, "prompt": "a kilo of apples", "answer": "kilo jablek" },
+            { "id": "e6", "number": 6, "prompt": "a kilo of rice", "answer": "kilo rýže" },
+            { "id": "e7", "number": 7, "prompt": "a piece of cheese", "answer": "kousek sýra" },
+            { "id": "e8", "number": 8, "prompt": "a piece of chicken", "answer": "kousek kuřete" },
+            { "id": "e9", "number": 9, "prompt": "a lot of fruit", "answer": "hodně ovoce" },
+            { "id": "e10", "number": 10, "prompt": "a little bit of bread", "answer": "trochu chleba" }
+          ]
+        },
+        {
+          "title": "Tricky (11–20)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "e11", "number": 11, "prompt": "a pack of sugar", "answer": "balíček cukru" },
+            { "id": "e12", "number": 12, "prompt": "a box of tea", "answer": "krabička čaju" },
+            { "id": "e13", "number": 13, "prompt": "a slice of pizza", "answer": "kousek pizzy" },
+            { "id": "e14", "number": 14, "prompt": "a bowl of soup", "answer": "miska polévky" },
+            { "id": "e15", "number": 15, "prompt": "a plate of pasta", "answer": "talíř těstovin" },
+            { "id": "e16", "number": 16, "prompt": "a liter of milk", "answer": "litr mléka" },
+            { "id": "e17", "number": 17, "prompt": "a kilogram of beef", "answer": "kilogram hovězího" },
+            { "id": "e18", "number": 18, "prompt": "a handful of peanuts", "answer": "hrst arašídů" },
+            { "id": "e19", "number": 19, "prompt": "a bunch of keys", "answer": "svazek klíčů" },
+            { "id": "e20", "number": 20, "prompt": "a piece of advice", "answer": "rada" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "title": "Translate to Czech",
+      "icon": "message-square",
+      "subsections": [
+        {
+          "title": "Original (1–10)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "f1", "number": 1, "prompt": "I need a bit of time.", "answer": "Potřebuji trochu času." },
+            { "id": "f2", "number": 2, "prompt": "I don't have much time.", "answer": "Nemám moc času." },
+            { "id": "f3", "number": 3, "prompt": "I have a lot of work.", "answer": "Mám hodně práce." },
+            { "id": "f4", "number": 4, "prompt": "I have no money.", "answer": "Nemám peníze." },
+            { "id": "f5", "number": 5, "prompt": "Five people are here.", "answer": "Pět lidí je tady." },
+            { "id": "f6", "number": 6, "prompt": "I bought a kilo of apples.", "answer": "Koupil jsem kilo jablek." },
+            { "id": "f7", "number": 7, "prompt": "I want a bottle of water.", "answer": "Chci láhev vody." },
+            { "id": "f8", "number": 8, "prompt": "We need several days.", "answer": "Potřebujeme několik dní." },
+            { "id": "f9", "number": 9, "prompt": "I have five minutes.", "answer": "Mám pět minut." },
+            { "id": "f10", "number": 10, "prompt": "I have ten crowns.", "answer": "Mám deset korun." }
+          ]
+        },
+        {
+          "title": "Tricky (11–20)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "f11", "number": 11, "prompt": "I don't have any energy today.", "answer": "Dnes nemám žádnou energii." },
+            { "id": "f12", "number": 12, "prompt": "I need a bit of help.", "answer": "Potřebuji trochu pomoci." },
+            { "id": "f13", "number": 13, "prompt": "I have a lot of questions.", "answer": "Mám hodně otázek." },
+            { "id": "f14", "number": 14, "prompt": "I don't have enough sleep.", "answer": "Nemám dost spánku." },
+            { "id": "f15", "number": 15, "prompt": "I drank a glass of water.", "answer": "Vypil jsem sklenici vody." },
+            { "id": "f16", "number": 16, "prompt": "I bought two bottles of water and one bottle of wine.", "answer": "Koupil jsem dvě láhve vody a jednu láhev vína." },
+            { "id": "f17", "number": 17, "prompt": "I have five minutes and then I'm leaving.", "answer": "Mám pět minut a pak odcházím." },
+            { "id": "f18", "number": 18, "prompt": "Except Friday, I'm busy every day.", "answer": "Kromě pátku jsem zaneprázdněný každý den." },
+            { "id": "f19", "number": 19, "prompt": "During the week I have little time, but on weekends I have more.", "answer": "Během týdne mám málo času, ale o víkendech mám víc." },
+            { "id": "f20", "number": 20, "prompt": "Without your phone number, I can't call you.", "answer": "Bez tvého telefonního čísla ti nemůžu zavolat." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "title": "Translate to Czech (Advanced)",
+      "icon": "message-square",
+      "subsections": [
+        {
+          "title": "Original (1–10)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "g1", "number": 1, "prompt": "I'm afraid of that dog.", "answer": "Bojím se toho psa." },
+            { "id": "g2", "number": 2, "prompt": "I'm afraid of spiders.", "answer": "Bojím se pavouků." },
+            { "id": "g3", "number": 3, "prompt": "I'll ask my friend.", "answer": "Zeptám se kamaráda." },
+            { "id": "g4", "number": 4, "prompt": "I'll ask the doctor.", "answer": "Zeptám se doktora." },
+            { "id": "g5", "number": 5, "prompt": "Without your help, I can't do it.", "answer": "Bez tvé pomoci to nezvládnu." },
+            { "id": "g6", "number": 6, "prompt": "Except Monday, I'm free.", "answer": "Kromě pondělí jsem volný." },
+            { "id": "g7", "number": 7, "prompt": "During the week I don't have time.", "answer": "Během týdne nemám čas." },
+            { "id": "g8", "number": 8, "prompt": "According to the map, it's near the center.", "answer": "Podle mapy je to blízko centra." },
+            { "id": "g9", "number": 9, "prompt": "Instead of coffee, I want tea.", "answer": "Místo kávy chci čaj." },
+            { "id": "g10", "number": 10, "prompt": "Without good sleep, I'm tired.", "answer": "Bez dobrého spánku jsem unavený." }
+          ]
+        },
+        {
+          "title": "Tricky (11–20)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "g11", "number": 11, "prompt": "I'm not afraid of dogs, but I'm afraid of heights.", "answer": "Nebojím se psů, ale bojím se výšek." },
+            { "id": "g12", "number": 12, "prompt": "I'll ask my boss about it.", "answer": "Zeptám se na to svého šéfa." },
+            { "id": "g13", "number": 13, "prompt": "Without any reason, he left.", "answer": "Bez jakéhokoli důvodu odešel." },
+            { "id": "g14", "number": 14, "prompt": "According to him, it's not possible.", "answer": "Podle něj to není možné." },
+            { "id": "g15", "number": 15, "prompt": "Instead of going to work, I'm going to the doctor.", "answer": "Místo toho, abych šel do práce, jdu k doktorovi." },
+            { "id": "g16", "number": 16, "prompt": "During the whole week I didn't have time.", "answer": "Během celého týdne jsem neměl čas." },
+            { "id": "g17", "number": 17, "prompt": "Except my friend, nobody knows.", "answer": "Kromě mého kamaráda to nikdo neví." },
+            { "id": "g18", "number": 18, "prompt": "I'm afraid of making mistakes.", "answer": "Bojím se dělat chyby." },
+            { "id": "g19", "number": 19, "prompt": "Without coffee, I'm not functional.", "answer": "Bez kávy nejsem funkční." },
+            { "id": "g20", "number": 20, "prompt": "According to the schedule, we start at 9.", "answer": "Podle rozvrhu začínáme v 9." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H",
+      "title": "Build the Phrase with an Adjective",
+      "icon": "users",
+      "subsections": [
+        {
+          "title": "Original (1–9)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "h1", "number": 1, "prompt": "without good coffee", "answer": "bez dobré kávy" },
+            { "id": "h2", "number": 2, "prompt": "without cold water", "answer": "bez studené vody" },
+            { "id": "h3", "number": 3, "prompt": "without my phone", "answer": "bez mého telefonu" },
+            { "id": "h4", "number": 4, "prompt": "without your car", "answer": "bez tvého auta" },
+            { "id": "h5", "number": 5, "prompt": "from the new office", "answer": "z nové kanceláře" },
+            { "id": "h6", "number": 6, "prompt": "to the big city (movement)", "answer": "do velkého města" },
+            { "id": "h7", "number": 7, "prompt": "a lot of good people", "answer": "hodně dobrých lidí" },
+            { "id": "h8", "number": 8, "prompt": "a lot of fresh apples", "answer": "hodně čerstvých jablek" },
+            { "id": "h9", "number": 9, "prompt": "a bottle of good wine", "answer": "láhev dobrého vína" }
+          ]
+        },
+        {
+          "title": "Tricky (10–18)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "h10", "number": 10, "prompt": "without any free time", "answer": "bez volného času" },
+            { "id": "h11", "number": 11, "prompt": "without the right information", "answer": "bez správné informace" },
+            { "id": "h12", "number": 12, "prompt": "without my old passport", "answer": "bez mého starého pasu" },
+            { "id": "h13", "number": 13, "prompt": "from the biggest city in the country", "answer": "z největšího města v zemi" },
+            { "id": "h14", "number": 14, "prompt": "to a smaller town (movement)", "answer": "do menšího města" },
+            { "id": "h15", "number": 15, "prompt": "a lot of new students", "answer": "hodně nových studentů" },
+            { "id": "h16", "number": 16, "prompt": "a little bit of hot soup", "answer": "trochu horké polévky" },
+            { "id": "h17", "number": 17, "prompt": "without your last message", "answer": "bez tvé poslední zprávy" },
+            { "id": "h18", "number": 18, "prompt": "during the entire long weekend", "answer": "během celého dlouhého víkendu" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "I",
+      "title": "Pronouns (Genitive)",
+      "icon": "sticky-note",
+      "hint": "Focus: pronouns with bez / od / z / do / u, plus bát se / zeptat se, and demonstratives (toho/té/těch). Fill blanks with the correct genitive pronoun form.",
+      "subsections": [
+        {
+          "title": "Personal Pronouns After Prepositions (101–115)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "i101", "number": 101, "prompt": "Bez ___ to nejde.", "hint": "(I / me)", "answer": "mě", "inputType": "small" },
+            { "id": "i102", "number": 102, "prompt": "Bez ___ to nezvládneš.", "hint": "(you - informal)", "answer": "tě", "inputType": "small" },
+            { "id": "i103", "number": 103, "prompt": "Jdu od ___.", "hint": "(he / him)", "answer": "něj", "inputType": "small" },
+            { "id": "i104", "number": 104, "prompt": "Mám to od ___.", "hint": "(they / them)", "answer": "nich", "inputType": "small" },
+            { "id": "i105", "number": 105, "prompt": "Jdu k ___?", "hint": "(you - formal/pl)", "answer": "vám", "inputType": "small" },
+            { "id": "i106", "number": 106, "prompt": "Bez ___ se to neobejde.", "hint": "(we / us)", "answer": "nás", "inputType": "small" },
+            { "id": "i107", "number": 107, "prompt": "Jsem u ___ doma.", "hint": "(he / him)", "answer": "něj", "inputType": "small" },
+            { "id": "i108", "number": 108, "prompt": "Jsem u ___ doma.", "hint": "(they / them)", "answer": "nich", "inputType": "small" },
+            { "id": "i109", "number": 109, "prompt": "Jsem od ___ z práce.", "hint": "(she / her)", "answer": "ní", "inputType": "small" },
+            { "id": "i110", "number": 110, "prompt": "Bez ___ pomoci to nejde.", "hint": "(you - formal/pl)", "answer": "vaší", "inputType": "small" },
+            { "id": "i111", "number": 111, "prompt": "Z ___ mám radost.", "hint": "(it - that thing, masc/neut)", "answer": "toho", "inputType": "small" },
+            { "id": "i112", "number": 112, "prompt": "Bez ___ jsem ztracený.", "hint": "(you - informal)", "answer": "tě", "inputType": "small" },
+            { "id": "i113", "number": 113, "prompt": "Bez ___ jsem ztracený.", "hint": "(I / me)", "answer": "mě", "inputType": "small" },
+            { "id": "i114", "number": 114, "prompt": "Od ___ to mám.", "hint": "(she / her)", "answer": "ní", "inputType": "small" },
+            { "id": "i115", "number": 115, "prompt": "Bez ___ to nedává smysl.", "hint": "(them)", "answer": "nich", "inputType": "small" }
+          ]
+        },
+        {
+          "title": "Demonstratives: toho / té / těch (116–125)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "i116", "number": 116, "prompt": "Bez ___ to nejde.", "hint": "(that - masc/neut)", "answer": "toho", "inputType": "small" },
+            { "id": "i117", "number": 117, "prompt": "Bez ___ mapy se ztratím.", "hint": "(that - fem)", "answer": "té", "inputType": "small" },
+            { "id": "i118", "number": 118, "prompt": "Bez ___ peněz to nepůjde.", "hint": "(those - plural)", "answer": "těch", "inputType": "small" },
+            { "id": "i119", "number": 119, "prompt": "Podle ___ je to správně.", "hint": "(that - masc/neut)", "answer": "toho", "inputType": "small" },
+            { "id": "i120", "number": 120, "prompt": "Kromě ___ mám ještě otázku.", "hint": "(that - masc/neut)", "answer": "toho", "inputType": "small" },
+            { "id": "i121", "number": 121, "prompt": "Z ___ mám strach.", "hint": "(that - masc/neut)", "answer": "toho", "inputType": "small" },
+            { "id": "i122", "number": 122, "prompt": "Bez ___ rady to nezvládnu.", "hint": "(that - fem \"advice\")", "answer": "té", "inputType": "small" },
+            { "id": "i123", "number": 123, "prompt": "Bez ___ lidí to nebude fungovat.", "hint": "(those - plural)", "answer": "těch", "inputType": "small" },
+            { "id": "i124", "number": 124, "prompt": "Podle ___ mapy je to blízko.", "hint": "(that - fem)", "answer": "té", "inputType": "small" },
+            { "id": "i125", "number": 125, "prompt": "Kromě ___ věcí potřebujeme ještě čas.", "hint": "(those - plural)", "answer": "těch", "inputType": "small" }
+          ]
+        },
+        {
+          "title": "Interrogatives/Relatives (126–135)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "i126", "number": 126, "prompt": "Bez ___ to nejde?", "hint": "(who)", "answer": "koho", "inputType": "small" },
+            { "id": "i127", "number": 127, "prompt": "Bojíš se ___?", "hint": "(what)", "answer": "čeho", "inputType": "small" },
+            { "id": "i128", "number": 128, "prompt": "Zeptám se ___.", "hint": "(who)", "answer": "koho", "inputType": "small" },
+            { "id": "i129", "number": 129, "prompt": "Bez ___ dokumentu nemůžeme začít.", "hint": "(which - masc)", "answer": "kterého", "inputType": "small" },
+            { "id": "i130", "number": 130, "prompt": "Bez ___ mapy to nenajdu.", "hint": "(which - fem)", "answer": "které", "inputType": "small" },
+            { "id": "i131", "number": 131, "prompt": "Bez ___ informací to nezvládnu.", "hint": "(which - plural)", "answer": "kterých", "inputType": "small" },
+            { "id": "i132", "number": 132, "prompt": "Podle ___ plánu jedeme do Brna.", "hint": "(which - masc)", "answer": "kterého", "inputType": "small" },
+            { "id": "i133", "number": 133, "prompt": "Z ___ města jsi?", "hint": "(which - neut \"city\")", "answer": "kterého", "inputType": "small" },
+            { "id": "i134", "number": 134, "prompt": "Kromě ___ dne jsem volný.", "hint": "(which - masc \"day\")", "answer": "kterého", "inputType": "small" },
+            { "id": "i135", "number": 135, "prompt": "Bez ___ věcí to nepůjde.", "hint": "(which - plural)", "answer": "kterých", "inputType": "small" }
+          ]
+        },
+        {
+          "title": "Indefinite/Negative Pronouns (136–145)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "i136", "number": 136, "prompt": "Bez ___ to nepůjde.", "hint": "(someone)", "answer": "někoho", "inputType": "small" },
+            { "id": "i137", "number": 137, "prompt": "Nebojím se ___.", "hint": "(nobody)", "answer": "nikoho", "inputType": "small" },
+            { "id": "i138", "number": 138, "prompt": "Potřebuju trochu ___ k jídlu.", "hint": "(something)", "answer": "něčeho", "inputType": "small" },
+            { "id": "i139", "number": 139, "prompt": "Bez ___ to nezvládnu.", "hint": "(anything)", "answer": "ničeho", "inputType": "small" },
+            { "id": "i140", "number": 140, "prompt": "Nemám ___.", "hint": "(anyone)", "answer": "nikoho", "inputType": "small" },
+            { "id": "i141", "number": 141, "prompt": "Nemám ___.", "hint": "(anything)", "answer": "ničeho", "inputType": "small" },
+            { "id": "i142", "number": 142, "prompt": "Bez ___ důvodu odešel.", "hint": "(no/any — \"any reason\")", "answer": "žádného", "inputType": "small" },
+            { "id": "i143", "number": 143, "prompt": "Bez ___ problémů.", "hint": "(no/any — \"any problems\")", "answer": "žádných", "inputType": "small" },
+            { "id": "i144", "number": 144, "prompt": "Nemám ___ peníze.", "hint": "(no — \"any/no money\")", "answer": "žádné", "inputType": "small" },
+            { "id": "i145", "number": 145, "prompt": "Bez ___ pomoci to nepůjde.", "hint": "(no/any — \"any help\")", "answer": "žádné", "inputType": "small" }
+          ]
+        },
+        {
+          "title": "Verb Triggers (146–150)",
+          "layout": "grid-1col",
+          "exercises": [
+            { "id": "i146", "number": 146, "prompt": "Bojím se ___.", "hint": "(spiders)", "answer": "pavouků", "inputType": "small" },
+            { "id": "i147", "number": 147, "prompt": "Bojím se ___.", "hint": "(mistakes)", "answer": "chyb", "inputType": "small" },
+            { "id": "i148", "number": 148, "prompt": "Zeptám se ___.", "hint": "(my friend)", "answer": "svého kamaráda", "inputType": "small" },
+            { "id": "i149", "number": 149, "prompt": "Zeptám se ___.", "hint": "(the doctor)", "answer": "doktora", "inputType": "small" },
+            { "id": "i150", "number": 150, "prompt": "Týká se to ___.", "hint": "(work)", "answer": "práce", "inputType": "small" }
+          ]
+        }
+      ]
+    }
+  ]
+}

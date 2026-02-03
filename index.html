@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Czech genitive case practice worksheet for B2 learners. Master the 2nd case with 248 exercises, study plans, and instant feedback.">
+  <meta name="keywords" content="Czech, genitive case, 2. pád, Czech grammar, B2 Czech, language learning, Czech worksheet">
+  <title>Czech B2 Genitive Practice Worksheet</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/worksheet.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    /* Fallback font while loading */
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main Wrapper -->
+  <div class="wrapper">
+    
+    <!-- Background Decoration -->
+    <div class="background-decoration">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    
+    <!-- Sticky Header (visible during session) -->
+    <header class="sticky-header" id="sticky-header">
+      <div class="session-info">
+        <div class="session-item">
+          <i data-lucide="target"></i>
+          <span id="plan-display">Deep dive 1hr</span>
+        </div>
+        <div class="session-item">
+          <i data-lucide="graduation-cap"></i>
+          <span id="level-display">B2</span>
+        </div>
+        <div class="session-item">
+          <i data-lucide="clock"></i>
+          <span id="timer-display">00:00</span>
+        </div>
+        <div class="session-item">
+          <i data-lucide="check-square"></i>
+          <span id="progress-text">0/0</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="header-btn" id="reset-btn">
+          <i data-lucide="rotate-ccw"></i>
+          <span>Reset</span>
+        </button>
+        <button class="header-btn primary" id="review-btn">
+          <i data-lucide="check-circle"></i>
+          <span>Review</span>
+        </button>
+        <button class="header-btn" id="end-btn">
+          <i data-lucide="x"></i>
+          <span>End</span>
+        </button>
+      </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <h1 class="hero-title">Czech B2</h1>
+      <h2 class="hero-subtitle">Genitive Practice Worksheet</h2>
+      <div class="hero-accent"></div>
+      
+      <!-- Study Plan Selection -->
+      <div class="selection-section">
+        <h3 class="selection-title">
+          <span class="step-number">1</span>
+          Choose Your Study Plan
+        </h3>
+        <div class="study-plans">
+          <button class="plan-card" data-plan="quick-10-min">
+            <i data-lucide="zap" class="plan-icon"></i>
+            <span class="plan-name">Quick<br>10 min</span>
+          </button>
+          <button class="plan-card" data-plan="medium-30-min">
+            <i data-lucide="book-open" class="plan-icon"></i>
+            <span class="plan-name">Medium<br>30 min</span>
+          </button>
+          <button class="plan-card selected" data-plan="deep-dive-1hr">
+            <i data-lucide="brain" class="plan-icon"></i>
+            <span class="plan-name">Deep dive<br>1hr</span>
+          </button>
+          <button class="plan-card" data-plan="test-1.5hr">
+            <i data-lucide="check-circle" class="plan-icon"></i>
+            <span class="plan-name">Test<br>1.5 hr</span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Level Selection -->
+      <div class="selection-section">
+        <h3 class="selection-title">
+          <span class="step-number">2</span>
+          Select Your Current Level
+        </h3>
+        <div class="level-badges">
+          <button class="level-badge" data-level="A1">A1</button>
+          <button class="level-badge" data-level="A2">A2</button>
+          <button class="level-badge" data-level="B1">B1</button>
+          <button class="level-badge selected" data-level="B2">B2</button>
+          <button class="level-badge" data-level="C1">C1</button>
+        </div>
+      </div>
+      
+      <!-- Start Button -->
+      <button class="start-button" id="start-btn">
+        <i data-lucide="play"></i>
+        Start My Study
+      </button>
+    </section>
+    
+    <!-- Practice Worksheet Container -->
+    <main class="practice-worksheet" id="worksheet-container">
+      <!-- Exercises will be dynamically rendered here -->
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Loading exercises...</p>
+      </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="worksheet-footer">
+      <div class="footer-accent"></div>
+      <p>Czech B2 Grammar Review — Genitive Case Practice</p>
+      <p class="powered-by">248 exercises to master the 2nd case</p>
+      <div class="footer-icons">
+        <i data-lucide="trophy"></i>
+        <i data-lucide="heart"></i>
+        <i data-lucide="award"></i>
+      </div>
+    </footer>
+    
+  </div>
+  
+  <!-- Results Modal -->
+  <div class="modal-overlay" id="results-modal">
+    <div class="modal">
+      <header class="modal-header">
+        <h2>
+          <i data-lucide="bar-chart-2"></i>
+          Study Session Results
+        </h2>
+        <button class="modal-close" id="modal-close">
+          <i data-lucide="x"></i>
+        </button>
+      </header>
+      
+      <div class="modal-body">
+        <!-- Session Info -->
+        <div class="session-summary">
+          <div class="session-summary-item">
+            <i data-lucide="target"></i>
+            <span>Plan: <strong id="result-plan">Deep dive 1hr</strong></span>
+          </div>
+          <div class="session-summary-item">
+            <i data-lucide="graduation-cap"></i>
+            <span>Level: <strong id="result-level">B2</strong></span>
+          </div>
+          <div class="session-summary-item">
+            <i data-lucide="clock"></i>
+            <span>Time: <strong id="result-time">00:00</strong></span>
+          </div>
+        </div>
+        
+        <!-- Accuracy Ring -->
+        <div class="accuracy-ring">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <defs>
+              <linearGradient id="accuracyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#415BD2"/>
+                <stop offset="100%" stop-color="#944BEC"/>
+              </linearGradient>
+            </defs>
+            <circle class="ring-bg" cx="60" cy="60" r="54"/>
+            <circle class="ring-fill" cx="60" cy="60" r="54"/>
+          </svg>
+          <span class="accuracy-value" id="result-accuracy">0%</span>
+        </div>
+        
+        <!-- Summary Stats -->
+        <div class="results-summary">
+          <div class="result-stat correct">
+            <div class="stat-value" id="result-correct">0</div>
+            <div class="stat-label">Correct</div>
+          </div>
+          <div class="result-stat incorrect">
+            <div class="stat-value" id="result-incorrect">0</div>
+            <div class="stat-label">Incorrect</div>
+          </div>
+          <div class="result-stat unanswered">
+            <div class="stat-value" id="result-unanswered">0</div>
+            <div class="stat-label">Unanswered</div>
+          </div>
+        </div>
+        
+        <!-- Breakdown by Part -->
+        <div class="results-breakdown">
+          <h3>Breakdown by Section</h3>
+          <div id="results-breakdown">
+            <!-- Breakdown items will be rendered here -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="review-incorrect-btn">
+          <i data-lucide="eye"></i>
+          Review Incorrect
+        </button>
+        <button class="btn" id="start-new-btn">
+          <i data-lucide="refresh-cw"></i>
+          Start New
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- JavaScript Files (order matters!) -->
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/session.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/print.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

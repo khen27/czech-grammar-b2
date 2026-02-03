@@ -1,0 +1,248 @@
+/* Responsive Styles */
+
+/* Tablet and Below */
+@media (max-width: 1024px) {
+  :root {
+    --text-6xl: 56px;
+    --text-5xl: 42px;
+  }
+  
+  .grid-3col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .results-summary {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --text-6xl: 42px;
+    --text-5xl: 32px;
+    --text-3xl: 22px;
+    --space-10: 32px;
+    --space-12: 40px;
+    --space-16: 48px;
+    --space-20: 64px;
+  }
+  
+  /* Layout */
+  .practice-worksheet {
+    padding: 0 var(--space-4) var(--space-12);
+  }
+  
+  /* Hero */
+  .hero {
+    padding: var(--space-12) var(--space-4);
+    margin-bottom: var(--space-8);
+  }
+  
+  .hero-subtitle {
+    font-size: var(--text-xl);
+  }
+  
+  .study-plans {
+    gap: var(--space-3);
+  }
+  
+  .plan-card {
+    width: 100px;
+    height: 100px;
+    padding: var(--space-3);
+  }
+  
+  .plan-card .plan-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: var(--space-2);
+  }
+  
+  .plan-card .plan-name {
+    font-size: var(--text-xs);
+  }
+  
+  .level-badges {
+    gap: var(--space-2);
+  }
+  
+  .level-badge {
+    width: 52px;
+    height: 52px;
+    font-size: var(--text-base);
+  }
+  
+  .start-button {
+    width: 100%;
+    justify-content: center;
+    padding: var(--space-4) var(--space-6);
+  }
+  
+  /* Section Cards */
+  .section-card {
+    padding: var(--space-6);
+    margin-bottom: var(--space-6);
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+  
+  .section-number {
+    width: 48px;
+    height: 48px;
+    font-size: var(--text-2xl);
+  }
+  
+  .section-header h2 {
+    font-size: var(--text-2xl);
+  }
+  
+  /* Grids */
+  .grid-2col,
+  .grid-3col {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Exercise Items */
+  .exercise-item {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  
+  .exercise-item label {
+    width: 100%;
+    margin-bottom: var(--space-2);
+  }
+  
+  .exercise-input {
+    width: 100%;
+    min-width: 100%;
+  }
+  
+  .exercise-input.small,
+  .exercise-input.inline {
+    max-width: 100%;
+  }
+  
+  /* Sticky Header */
+  .sticky-header {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+  }
+  
+  .sticky-header .session-info {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+  
+  .sticky-header .session-item {
+    font-size: var(--text-xs);
+  }
+  
+  .progress-bar {
+    width: 80px;
+  }
+  
+  .header-btn {
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--text-xs);
+  }
+  
+  .header-btn span {
+    display: none;
+  }
+  
+  /* Modal */
+  .modal {
+    margin: var(--space-4);
+    max-height: calc(100vh - var(--space-8));
+  }
+  
+  .modal-header {
+    padding: var(--space-4);
+  }
+  
+  .modal-header h2 {
+    font-size: var(--text-xl);
+  }
+  
+  .modal-body {
+    padding: var(--space-4);
+  }
+  
+  .results-summary {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+  
+  .modal-actions {
+    flex-direction: column;
+    padding: var(--space-4);
+  }
+  
+  /* Callouts */
+  .callout {
+    padding: var(--space-4);
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  :root {
+    --text-6xl: 36px;
+    --text-4xl: 28px;
+  }
+  
+  .study-plans {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .plan-card {
+    width: 100%;
+    height: auto;
+    min-height: 90px;
+  }
+  
+  .level-badge {
+    width: 48px;
+    height: 48px;
+    font-size: var(--text-sm);
+  }
+  
+  .section-number {
+    width: 40px;
+    height: 40px;
+    font-size: var(--text-xl);
+  }
+  
+  .breakdown-item {
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+  
+  .breakdown-label {
+    width: 100%;
+    margin-bottom: var(--space-1);
+  }
+  
+  .breakdown-bar {
+    flex: 1;
+  }
+}
+
+/* Ensure body has padding when sticky header is visible */
+body.session-active {
+  padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  body.session-active {
+    padding-top: 80px;
+  }
+}
