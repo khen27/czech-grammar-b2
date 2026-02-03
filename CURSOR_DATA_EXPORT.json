@@ -1,0 +1,332 @@
+{
+  "project": {
+    "name": "Czech B2 Genitive Practice Worksheet",
+    "description": "Interactive learning application with study guide and 248 practice exercises",
+    "tech_stack": ["React", "TypeScript", "CSS", "Lucide Icons"],
+    "total_exercises": 248
+  },
+  
+  "colors": {
+    "primary": {
+      "blue": "#415BD2",
+      "purple": "#944BEC",
+      "gradient": "linear-gradient(135deg, #415BD2 0%, #944BEC 100%)"
+    },
+    "accents": {
+      "pink": "#EC4B9B",
+      "cyan": "#4BBFEC",
+      "orange": "#EC944B",
+      "yellow": "#ECBF4B",
+      "green": "#4BEC9B",
+      "red": "#EC4B5B"
+    },
+    "feedback": {
+      "correct": "#4BEC9B",
+      "correct_bg": "rgba(75, 236, 155, 0.1)",
+      "incorrect": "#EC4B5B",
+      "incorrect_bg": "rgba(236, 75, 91, 0.1)"
+    }
+  },
+  
+  "typography": {
+    "font_family": "'Clash Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+    "sizes": {
+      "hero_title": "clamp(48px, 8vw, 96px)",
+      "hero_subtitle": "clamp(24px, 4vw, 42px)",
+      "section_header": "clamp(24px, 3vw, 32px)",
+      "subsection": "18px",
+      "body": "15px",
+      "small": "13px"
+    },
+    "weights": {
+      "bold": 700,
+      "semibold": 600,
+      "medium": 500,
+      "regular": 400
+    }
+  },
+  
+  "layout": {
+    "max_width": "1400px",
+    "padding": "60px 40px 80px",
+    "section_margin": "40px",
+    "card_padding": "40px",
+    "card_radius": "24px",
+    "grid_gap": "24px"
+  },
+  
+  "page_structure": [
+    {
+      "section": "study_guide",
+      "order": 1,
+      "subsections": [
+        {
+          "id": "hero",
+          "icon": "BookOpen",
+          "title": "Complete Study Guide",
+          "subtitle": "Master Your Grammar. Czech B2."
+        },
+        {
+          "id": "what_is_genitive",
+          "icon": "Info",
+          "title": "What is the Genitive Case?",
+          "card_type": "highlight-card",
+          "use_cases": [
+            {"title": "Possession", "icon": "User", "color": "blue"},
+            {"title": "Quantity", "icon": "Hash", "color": "purple"},
+            {"title": "After Prepositions", "icon": "ArrowRight", "color": "pink"},
+            {"title": "Numbers 5+", "icon": "Calculator", "color": "cyan"},
+            {"title": "Certain Verbs", "icon": "MessageSquare", "color": "orange"}
+          ]
+        },
+        {
+          "id": "when_to_use",
+          "icon": "Lightbulb",
+          "title": "When to Use Genitive - 5 Key Situations",
+          "card_type": "highlight-card",
+          "steps": 5
+        },
+        {
+          "id": "movement_vs_location",
+          "icon": "MapPin",
+          "title": "Movement vs. Location? Here's How to Tell",
+          "card_type": "method-card"
+        },
+        {
+          "id": "prepositions",
+          "icon": "Route",
+          "title": "Prepositions Using Genitive",
+          "card_type": "cheatsheet-card",
+          "preposition_count": 12
+        },
+        {
+          "id": "numbers",
+          "icon": "Hash",
+          "title": "Numbers with Genitive",
+          "card_type": "guide-card"
+        },
+        {
+          "id": "verbs",
+          "icon": "MessageCircle",
+          "title": "Verbs Requiring Genitive",
+          "card_type": "guide-card",
+          "verb_count": 8
+        },
+        {
+          "id": "noun_forms",
+          "icon": "Users",
+          "title": "How Nouns Change - Genitive Forms",
+          "card_type": "warning-card"
+        },
+        {
+          "id": "pronouns",
+          "icon": "Users",
+          "title": "Pronouns in Genitive",
+          "card_type": "guide-card"
+        }
+      ]
+    },
+    {
+      "section": "practice_worksheet",
+      "order": 2,
+      "parts": [
+        {
+          "id": "part_a",
+          "letter": "A",
+          "icon": "Languages",
+          "title": "Translate to Czech",
+          "exercise_count": 40,
+          "subsections": ["Original (1-20)", "Tricky (21-40)"]
+        },
+        {
+          "id": "part_b",
+          "letter": "B",
+          "icon": "Route",
+          "title": "Fill the Correct Preposition",
+          "exercise_count": 20,
+          "hint": "Use only: bez / do / z / od / u",
+          "subsections": ["Original (1-10)", "Tricky (11-20)"]
+        },
+        {
+          "id": "part_c",
+          "letter": "C",
+          "icon": "Shuffle",
+          "title": "Movement or Location?",
+          "exercise_count": 20,
+          "hint": "Write: movement or location",
+          "subsections": ["Original (1-10)", "Tricky (11-20)"]
+        },
+        {
+          "id": "part_d",
+          "letter": "D",
+          "icon": "Calculator",
+          "title": "Fill the Correct Form",
+          "exercise_count": 40,
+          "subsections": ["Original (1-20)", "Tricky (21-40)"]
+        },
+        {
+          "id": "part_e",
+          "letter": "E",
+          "icon": "Package",
+          "title": "Make the Full Phrase",
+          "exercise_count": 20,
+          "subsections": ["Original (1-10)", "Tricky (11-20)"]
+        },
+        {
+          "id": "part_f",
+          "letter": "F",
+          "icon": "MessagesSquare",
+          "title": "Translate to Czech",
+          "exercise_count": 20,
+          "subsections": ["Original (1-10)", "Tricky (11-20)"]
+        },
+        {
+          "id": "part_g",
+          "letter": "G",
+          "icon": "MessagesSquare",
+          "title": "Translate to Czech",
+          "exercise_count": 20,
+          "subsections": ["Original (1-10)", "Tricky (11-20)"]
+        },
+        {
+          "id": "part_h",
+          "letter": "H",
+          "icon": "Users",
+          "title": "Build the Phrase with an Adjective",
+          "exercise_count": 18,
+          "subsections": ["Original (1-9)", "Tricky (10-18)"]
+        },
+        {
+          "id": "part_i",
+          "letter": "I",
+          "icon": "StickyNote",
+          "title": "Pronouns (Genitive)",
+          "exercise_count": 50,
+          "subsections": [
+            "Personal Pronouns (1-10)",
+            "Demonstrative & Interrogative (11-25)",
+            "Interrogative Pronouns (26-30)",
+            "Negative/Indefinite (31-45)",
+            "Mixed Practice (46-50)"
+          ]
+        }
+      ]
+    }
+  ],
+  
+  "icons": {
+    "library": "lucide-react",
+    "list": [
+      "BookOpen", "Info", "Lightbulb", "MapPin", "Route", "Hash",
+      "MessageCircle", "Users", "ArrowRight", "ArrowLeft", "X",
+      "Clock", "Zap", "Calculator", "Package", "MessagesSquare",
+      "StickyNote", "Check", "AlertCircle", "Award", "AlertTriangle",
+      "Languages", "Shuffle", "User", "MessageSquare", "Navigation"
+    ]
+  },
+  
+  "interactive_features": {
+    "answer_checking": {
+      "enabled": true,
+      "validation": "client-side",
+      "normalization": ["lowercase", "trim", "remove_extra_spaces", "remove_punctuation"],
+      "multiple_answers_supported": true,
+      "visual_feedback": {
+        "correct": "green border + checkmark icon",
+        "incorrect": "red border + x icon + show correct answer"
+      }
+    },
+    "results_tracking": {
+      "metrics": [
+        "total_answered",
+        "total_correct",
+        "total_incorrect",
+        "accuracy_percentage",
+        "completion_percentage"
+      ]
+    },
+    "user_actions": [
+      "type_answers",
+      "check_all_answers",
+      "reset_all_answers"
+    ]
+  },
+  
+  "file_structure": {
+    "components": [
+      "/src/app/App.tsx",
+      "/src/app/components/StudyGuide.tsx",
+      "/src/app/components/PracticeWorksheet.tsx"
+    ],
+    "data": [
+      "/src/data/answers.ts"
+    ],
+    "utils": [
+      "/src/utils/answerChecker.ts"
+    ],
+    "styles": [
+      "/src/styles/index.css",
+      "/src/styles/fonts.css",
+      "/src/styles/tailwind.css",
+      "/src/styles/theme.css",
+      "/src/styles/worksheet.css",
+      "/src/styles/answer-checking.css"
+    ]
+  },
+  
+  "responsive_breakpoints": {
+    "mobile": "max-width: 768px",
+    "desktop": "min-width: 769px"
+  },
+  
+  "card_variants": [
+    {
+      "name": "highlight-card",
+      "background": "linear-gradient(135deg, rgba(65, 91, 210, 0.08) 0%, rgba(148, 75, 236, 0.08) 100%)",
+      "border": "rgba(148, 75, 236, 0.3)"
+    },
+    {
+      "name": "warning-card",
+      "background": "linear-gradient(135deg, rgba(236, 75, 75, 0.05) 0%, rgba(236, 135, 75, 0.05) 100%)",
+      "border": "rgba(236, 75, 75, 0.2)"
+    },
+    {
+      "name": "method-card",
+      "background": "linear-gradient(135deg, rgba(75, 236, 148, 0.05) 0%, rgba(75, 191, 236, 0.05) 100%)",
+      "border": "rgba(75, 236, 148, 0.2)"
+    },
+    {
+      "name": "cheatsheet-card",
+      "background": "linear-gradient(135deg, rgba(236, 191, 75, 0.05) 0%, rgba(236, 148, 75, 0.05) 100%)",
+      "border": "rgba(236, 191, 75, 0.2)"
+    }
+  ],
+  
+  "answer_key_sample": {
+    "part_a": {
+      "a1": "bez cukru",
+      "a2": "bez soli",
+      "a3": "bez mléka"
+    },
+    "part_b": {
+      "b1": "do",
+      "b2": "u",
+      "b6": ["k", "ke"]
+    },
+    "part_c": {
+      "c1": "movement",
+      "c2": "location"
+    }
+  },
+  
+  "implementation_notes": {
+    "state_management": "React useState hooks",
+    "styling_approach": "CSS with custom properties + Tailwind v4",
+    "font_loading": "Google Fonts API (Clash Grotesk)",
+    "icon_system": "Lucide React components",
+    "responsive_strategy": "CSS Grid with auto-fit and minmax()",
+    "print_support": "@media print styles included",
+    "no_backend": "All validation happens client-side",
+    "no_persistence": "Fire and forget (resets on page refresh)"
+  }
+}

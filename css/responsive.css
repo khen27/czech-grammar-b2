@@ -28,6 +28,19 @@
     --space-20: 64px;
   }
   
+  /* Study Guide */
+  .study-guide {
+    padding: var(--space-8) var(--space-4);
+  }
+  
+  .guide-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .preposition-grid {
+    grid-template-columns: 1fr;
+  }
+  
   /* Layout */
   .practice-worksheet {
     padding: 0 var(--space-4) var(--space-12);

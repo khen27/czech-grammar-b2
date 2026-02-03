@@ -1,0 +1,1714 @@
+# Czech B2 Genitive Practice Worksheet - Complete Implementation Spec for Cursor
+
+## 📋 Table of Contents
+1. [Full Content Export](#1-full-content-export)
+2. [Layout & Component Specs](#2-layout--component-specs)
+3. [Visual Design Specs](#3-visual-design-specs)
+4. [Structure & Hierarchy](#4-structure--hierarchy)
+5. [Interactive Features](#5-interactive-features)
+6. [Answer Key Database](#6-answer-key-database)
+
+---
+
+## 1. Full Content Export
+
+### Page Structure (Top to Bottom)
+
+```
+├── Study Guide Container
+│   ├── Study Hero Section
+│   ├── What is Genitive Section
+│   ├── When to Use Genitive Section
+│   ├── Movement vs Location Section
+│   ├── Prepositions Reference Section
+│   ├── Numbers with Genitive Section
+│   ├── Verbs Requiring Genitive Section
+│   ├── How Nouns Change Section
+│   └── Pronouns in Genitive Section
+│
+└── Practice Worksheet Container
+    ├── Worksheet Hero Header
+    ├── Action Buttons (Check Answers, Reset)
+    ├── Results Summary (conditional)
+    ├── Part A: Translate to Czech
+    ├── Part B: Fill the Correct Preposition
+    ├── Part C: Movement or Location?
+    ├── Part D: Fill the Correct Form
+    ├── Part E: Make the Full Phrase
+    ├── Part F: Translate to Czech (Sentences)
+    ├── Part G: Translate to Czech (Complex)
+    ├── Part H: Build Phrase with Adjective
+    └── Part I: Pronouns (Genitive)
+```
+
+### Detailed Content for Each Section
+
+#### STUDY GUIDE SECTIONS
+
+##### Study Hero Section
+```markdown
+ICON: BookOpen (120px, gradient background)
+TITLE: Complete Study Guide
+SUBTITLE: Master Your Grammar. Czech B2.
+ACCENT: Gradient line decoration
+```
+
+##### Section 1: What is Genitive?
+```markdown
+HEADER ICON: Info
+TITLE: What is the Genitive Case?
+
+INTRO TEXT:
+The genitive case (genitiv) is one of the 7 Czech cases. It answers questions like:
+"Whose?" (čí?) "Of what?" (čeho?) "From where?" (odkud?)
+
+USE CASES GRID (5 cards):
+
+Card 1 - Possession
+ICON: User (blue gradient)
+TITLE: Possession
+EXAMPLES:
+- Nominative: To je auto.
+- Genitive: To je auto mého bratra. (my brother's car)
+- Genitive: To je kniha Petra. (Peter's book)
+
+Card 2 - Quantity
+ICON: Hash (purple gradient)
+TITLE: Quantity
+EXAMPLES:
+- Nominative: Mám pivo.
+- Genitive: Mám dvě piva. (two beers)
+- Genitive: Mám pět piv. (five beers)
+
+Card 3 - After Prepositions
+ICON: ArrowRight (pink gradient)
+TITLE: After Prepositions
+EXAMPLES:
+- bez (without): bez mléka
+- z/ze (from): z Prahy
+- do (to/into): do školy
+- od (from): od kamaráda
+- u (at): u doktora
+
+Card 4 - Numbers 5+
+ICON: Calculator (cyan gradient)
+TITLE: Numbers 5+
+EXAMPLES:
+- Nominative: student (one student)
+- Genitive: pět studentů (five students)
+- Genitive: deset korun (ten crowns)
+
+Card 5 - Certain Verbs
+ICON: MessageSquare (orange gradient)
+TITLE: Certain Verbs
+EXAMPLES:
+- bát se (to be afraid of): Bojím se psa.
+- ptát se (to ask): Ptám se učitele.
+- používat (to use): Používám mobilu.
+```
+
+##### Section 2: When to Use Genitive - 5 Key Situations
+
+```markdown
+HEADER ICON: Lightbulb
+TITLE: When to Use Genitive - 5 Key Situations
+CARD STYLE: highlight-card (purple gradient background)
+
+STEPS GRID (5 items):
+
+Step 1
+NUMBER: 1 (gradient badge)
+TITLE: With Prepositions
+TEXT: bez, z, do, od, u, kolem, během, kromě, místo, podle, etc.
+EXAMPLE: Jdu do práce. (I'm going to work)
+
+Step 2
+NUMBER: 2
+TITLE: Showing Possession
+TEXT: Like English 's or "of"
+EXAMPLE: Auto mého bratra (My brother's car)
+
+Step 3
+NUMBER: 3
+TITLE: After Numbers 5+
+TEXT: 5, 6, 7... 100, 1000, etc.
+EXAMPLE: Pět studentů (Five students)
+
+Step 4
+NUMBER: 4
+TITLE: Quantity Expressions
+TEXT: hodně, málo, trochu, spousta, několik, etc.
+EXAMPLE: Hodně práce (A lot of work)
+
+Step 5
+NUMBER: 5
+TITLE: Certain Verbs
+TEXT: bát se, ptát se, bojím se, zeptat se
+EXAMPLE: Bojím se pavouků. (I'm afraid of spiders)
+```
+
+##### Section 3: Movement vs Location
+
+```markdown
+HEADER ICON: MapPin
+TITLE: Movement vs. Location? Here's How to Tell
+CARD STYLE: method-card (green/cyan gradient)
+
+KEY INSIGHT BOX:
+ICON: AlertCircle
+TEXT: Movement uses DO (to) + Genitive for direction. Location uses V/NA (in/at) + Locative for being somewhere.
+
+COMPARISON TABLE:
+
+Row 1 - Movement (blue background)
+ICON: ArrowRight
+LABEL: MOVEMENT → DO + Genitive
+EXAMPLE: Jdu do Prahy. (I'm going to Prague)
+EXAMPLE: Jdu k doktorovi. (I'm going to the doctor)
+
+Row 2 - Location (purple background)
+ICON: MapPin
+LABEL: LOCATION → V/NA + Locative
+EXAMPLE: Jsem v Praze. (I'm in Prague)
+EXAMPLE: Jsem u doktora. (I'm at the doctor's)
+
+Row 3 - Proximity (cyan background)
+ICON: Navigation
+LABEL: "AT SOMEONE'S" → U + Genitive
+EXAMPLE: Jsem u kamaráda. (I'm at my friend's place)
+EXAMPLE: Jsem u mámy. (I'm at mom's)
+```
+
+##### Section 4: Prepositions Using Genitive
+
+```markdown
+HEADER ICON: Route
+TITLE: Prepositions Using Genitive
+CARD STYLE: cheatsheet-card (yellow/orange gradient)
+
+TRIGGER SECTIONS (6 sections):
+
+Trigger 1: Movement & Direction
+ICON: ArrowRight
+DESCRIPTION: Where you're going
+TRIGGER WORDS: do, k/ke
+EXAMPLES:
+- do Prahy (to Prague)
+- do práce (to work)
+- k doktorovi (to the doctor)
+- ke kamarádovi (to a friend's)
+
+Trigger 2: Origin & Source
+ICON: ArrowLeft
+DESCRIPTION: Where you're from or coming from
+TRIGGER WORDS: z/ze, od
+EXAMPLES:
+- z Prahy (from Prague)
+- z práce (from work)
+- od doktora (from the doctor)
+- ze školy (from school)
+
+Trigger 3: Absence & Negation
+ICON: X
+DESCRIPTION: Without something
+TRIGGER WORDS: bez
+EXAMPLES:
+- bez cukru (without sugar)
+- bez peněz (without money)
+- bez problému (without a problem)
+
+Trigger 4: Proximity & Vicinity
+ICON: MapPin
+DESCRIPTION: Being at someone's place or near something
+TRIGGER WORDS: u, kolem, blízko
+EXAMPLES:
+- u doktora (at the doctor's)
+- kolem centra (around the center)
+- blízko nádraží (near the station)
+
+Trigger 5: Time & Duration
+ICON: Clock
+DESCRIPTION: During a time period
+TRIGGER WORDS: během, do
+EXAMPLES:
+- během týdne (during the week)
+- do pátku (until Friday)
+
+Trigger 6: Other Advanced
+ICON: Zap
+DESCRIPTION: Additional prepositions
+TRIGGER WORDS: kromě, místo, podle
+EXAMPLES:
+- kromě pondělí (except Monday)
+- místo kávy (instead of coffee)
+- podle mapy (according to the map)
+
+PREPOSITIONS SHOWCASE (12 cards):
+
+Card: bez
+MEANING: without
+EXAMPLES:
+- bez cukru (without sugar)
+- bez tebe (without you)
+
+Card: z/ze
+MEANING: from
+EXAMPLES:
+- z Prahy (from Prague)
+- ze školy (from school)
+
+Card: do
+MEANING: to/into
+EXAMPLES:
+- do města (to the city)
+- do obchodu (to the store)
+
+Card: od
+MEANING: from (person/time)
+EXAMPLES:
+- od kamaráda (from a friend)
+- od pondělí (from Monday)
+
+Card: u
+MEANING: at/by
+EXAMPLES:
+- u doktora (at the doctor's)
+- u mě (at my place)
+
+Card: kolem
+MEANING: around
+EXAMPLES:
+- kolem centra (around the center)
+- kolem osmi (around eight)
+
+Card: během
+MEANING: during
+EXAMPLES:
+- během dne (during the day)
+- během týdne (during the week)
+
+Card: kromě (ADVANCED)
+MEANING: except
+EXAMPLES:
+- kromě tebe (except you)
+- kromě pondělí (except Monday)
+
+Card: místo (ADVANCED)
+MEANING: instead of
+EXAMPLES:
+- místo kávy (instead of coffee)
+- místo tebe (instead of you)
+
+Card: podle (ADVANCED)
+MEANING: according to
+EXAMPLES:
+- podle mapy (according to map)
+- podle mě (according to me)
+
+Card: blízko
+MEANING: near
+EXAMPLES:
+- blízko centra (near center)
+- blízko nás (near us)
+
+Card: k/ke
+MEANING: to/towards
+EXAMPLES:
+- k doktorovi (to the doctor)
+- ke kamarádovi (to a friend)
+```
+
+##### Section 5: Numbers with Genitive
+
+```markdown
+HEADER ICON: Hash
+TITLE: Numbers with Genitive
+CARD STYLE: guide-card
+
+NUMBERS VISUAL (4 rules):
+
+Rule 1 - NOT HIGHLIGHTED
+NUMBER BOX: 1
+RESULT: Nominative singular
+HIGHLIGHT: mám jeden koláč (I have one cake)
+
+Rule 2 - NOT HIGHLIGHTED
+NUMBER BOX: 2-4
+RESULT: Nominative plural
+HIGHLIGHT: mám dva koláče (I have two cakes)
+
+Rule 3 - HIGHLIGHTED (genitive!)
+NUMBER BOX: 5+ (gradient)
+RESULT: Genitive plural
+HIGHLIGHT: mám pět koláčů (I have five cakes)
+
+Rule 4 - HIGHLIGHTED (genitive!)
+NUMBER BOX: hodně, málo, etc. (gradient)
+RESULT: Genitive (sing/plural)
+HIGHLIGHT: hodně práce (a lot of work)
+
+KEY INSIGHT BOX:
+ICON: Lightbulb
+TEXT: After 5 and up (pět, šest, sedm...), Czech uses the genitive plural. This is the most common use of genitive!
+
+MEASURES GRID (12 items):
+
+1. pět studentů (five students)
+2. deset korun (ten crowns)
+3. hodně lidí (many people)
+4. málo času (little time)
+5. trochu vody (a bit of water)
+6. spousta práce (lots of work)
+7. několik dní (several days)
+8. dvacet minut (twenty minutes)
+9. sto metrů (hundred meters)
+10. tisíc korun (thousand crowns)
+11. pár věcí (a couple things)
+12. mnoho problémů (many problems)
+
+QUANTITY EXPRESSIONS:
+- láhev vody (bottle of water)
+- sklenice vína (glass of wine)
+- šálek kávy (cup of coffee)
+- kilo jablek (kilo of apples)
+- kousek sýra (piece of cheese)
+- litr mléka (liter of milk)
+```
+
+##### Section 6: Verbs Requiring Genitive
+
+```markdown
+HEADER ICON: MessageCircle
+TITLE: Verbs Requiring Genitive
+
+INTRO TEXT:
+Some Czech verbs always take the genitive case for their object.
+
+VERB CARDS (8 cards):
+
+Card 1:
+VERB: bát se (čeho?)
+MEANING: to be afraid of
+EXAMPLE: Bojím se pavouků. (I'm afraid of spiders)
+
+Card 2:
+VERB: ptát se (koho? čeho?)
+MEANING: to ask (someone/something)
+EXAMPLE: Ptám se učitele. (I'm asking the teacher)
+
+Card 3:
+VERB: zeptat se (koho? čeho?)
+MEANING: to ask (perfective)
+EXAMPLE: Zeptal jsem se kamaráda. (I asked my friend)
+
+Card 4:
+VERB: dotknout se (čeho?)
+MEANING: to touch
+EXAMPLE: Dotkl jsem se stolu. (I touched the table)
+
+Card 5:
+VERB: týkat se (čeho?)
+MEANING: to concern
+EXAMPLE: Týká se toho problému. (It concerns that problem)
+
+Card 6:
+VERB: vzdát se (čeho?)
+MEANING: to give up
+EXAMPLE: Vzdal se svého snu. (He gave up his dream)
+
+Card 7:
+VERB: všimnout si (čeho?)
+MEANING: to notice
+EXAMPLE: Všiml jsem si té chyby. (I noticed that mistake)
+
+Card 8:
+VERB: používat (čeho?)
+MEANING: to use
+EXAMPLE: Používám nového telefonu. (I'm using a new phone)
+
+EXAM TIP BOX:
+ICON: Award
+TEXT: Memorize these! B2 exams frequently test whether you know which verbs require genitive.
+```
+
+##### Section 7: How Nouns Change (Genitive Forms)
+
+```markdown
+HEADER ICON: Users
+TITLE: How Nouns Change - Genitive Forms
+CARD STYLE: warning-card (red/orange gradient)
+
+FORMS INTRO BOX:
+ICON: AlertTriangle
+TEXT: Genitive endings depend on gender (masculine/feminine/neuter) and whether the noun is "hard" or "soft". Don't memorize all rules—focus on patterns and common words.
+
+GENDER FORMS GRID:
+
+FEMININE NOUNS CARD (pink background):
+LABEL: ♀ Feminine
+BADGE: -y / -e / -í
+
+Hard Consonants → -y
+Examples:
+- žena → ženy
+- kniha → knihy
+- kavárna → kavárny
+
+Soft Consonants → -e
+Examples:
+- ulice → ulice
+- restaurace → restaurace
+
+Special -i/-í
+Examples:
+- píseň → písně
+- věc → věci
+
+NEUTER NOUNS CARD (purple background):
+LABEL: ⚪ Neuter
+BADGE: -a / -e / -í
+
+-o Endings → -a
+Examples:
+- město → města
+- auto → auta
+- okno → okna
+
+-e/-ě Endings → -e
+Examples:
+- moře → moře
+- pole → pole
+
+-í Endings → -í
+Examples:
+- nádraží → nádraží
+- náměstí → náměstí
+
+MASCULINE ANIMATE CARD (blue background):
+LABEL: ♂ Masculine Animate
+BADGE: -a / -e
+
+Hard → -a
+Examples:
+- student → studenta
+- doktor → doktora
+- pes → psa
+
+Soft → -e
+Examples:
+- učitel → učitele
+- muž → muže
+
+MASCULINE INANIMATE CARD (blue background):
+LABEL: ♂ Masculine Inanimate
+BADGE: -u / -a
+
+Most → -u
+Examples:
+- stůl → stolu
+- telefon → telefonu
+- autobus → autobusu
+
+Some → -a
+Examples:
+- dům → domu
+- hrad → hradu
+
+PLURAL FORMS (all genders):
+
+MASCULINE CARD:
+Hard → -ů
+Examples:
+- studentů
+- doktorů
+- psů
+
+Soft → -ů/-í
+Examples:
+- učitelů
+- mužů
+
+FEMININE CARD:
+Cons. → remove vowel
+Examples:
+- žen (from žena)
+- kavárен (from kavárna)
+
+-e/-ice → -
+Examples:
+- restaurací
+- ulice → ulic
+
+NEUTER CARD:
+Most → remove -o/-e
+Examples:
+- měst (from město)
+- aut (from auto)
+
+Special → -í
+Examples:
+- nádraží
+- náměstí
+
+BOSS FIGHT SECTION (yellow background):
+ICON: Zap
+TITLE: 💀 Irregular "Boss Fight" Nouns
+
+TABLE:
+Nominative → Genitive
+člověk → lidi (person/people)
+dítě → dětí (child/children)
+peníze → peněz (money)
+den → dne/dnů (day/days)
+
+PERSONAL NOTES AREA:
+ICON: StickyNote
+LABEL: Your Personal Notes
+TEXTAREA: Write tricky patterns you notice...
+```
+
+##### Section 8: Pronouns in Genitive
+
+```markdown
+HEADER ICON: Users
+TITLE: Pronouns in Genitive
+
+CONCEPT INTRO:
+TEXT: Pronouns change form in genitive just like nouns. These are essential for everyday conversation!
+
+PRONOUNS TABLE (responsive grid):
+
+PERSONAL PRONOUNS:
+Nominative → Genitive → Example
+já → mě/mne → bez mě (without me)
+ty → tě/tebe → bez tebe (without you)
+on → něho/ho → bez něho (without him)
+ona → ní/jí → u ní (at her place)
+ono → něho/ho → kolem něho (around it)
+my → nás → od nás (from us)
+vy → vás → kromě vás (except you)
+oni/ony/ona → nich/jich → mezi nich (among them)
+
+POSSESSIVE PRONOUNS (Whose?):
+můj/moje → mého/mojí → Example
+tvůj/tvoje → tvého/tvojí
+jeho → jeho
+její → jejího/její
+náš/naše → našeho/naší
+váš/vaše → vašeho/vaší
+jejich → jejich
+
+DEMONSTRATIVE PRONOUNS (This/That):
+Nominative → Genitive
+ten → toho (that masc.)
+ta → té (that fem.)
+to → toho (that neut.)
+ti/ty/ta → těch (those)
+
+INTERROGATIVE PRONOUNS (Questions):
+kdo → koho (who)
+co → čeho (what)
+který → kterého/které/kterých
+
+NEGATIVE/INDEFINITE:
+někdo → někoho (someone)
+nikdo → nikoho (no one)
+něco → něčeho (something)
+nic → ničeho (nothing)
+žádný → žádného/žádné/žádných (no/none)
+
+EXAMPLES IN CONTEXT:
+1. bez mě (without me)
+2. od tebe (from you)
+3. u ní (at her place)
+4. kromě nás (except us)
+5. během toho (during that)
+6. kolem nich (around them)
+7. místo mě (instead of me)
+8. podle něho (according to him)
+
+PERSONAL NOTES AREA:
+ICON: StickyNote
+LABEL: Your Pronoun Notes
+TEXTAREA: Track which pronouns you mix up...
+```
+
+---
+
+#### PRACTICE WORKSHEET SECTIONS
+
+##### Worksheet Hero Header
+```markdown
+TITLE: Czech B2
+SUBTITLE: Genitive Practice Worksheet
+ACCENT: Gradient line (blue to purple)
+```
+
+##### Part A: Translate to Czech
+```markdown
+SECTION NUMBER: A
+ICON: Languages
+TITLE: Translate to Czech
+
+SUBSECTION: Original (1–20)
+1. without sugar → [input]
+2. without salt → [input]
+3. without milk → [input]
+4. without a car → [input]
+5. without a phone → [input]
+6. from Prague → [input]
+7. from Brno → [input]
+8. from the city → [input]
+9. from the office → [input]
+10. from the restaurant → [input]
+11. to Prague (movement) → [input]
+12. to Brno (movement) → [input]
+13. to work (movement) → [input]
+14. to school (movement) → [input]
+15. to the city center → [input]
+16. at the doctor's → [input]
+17. at my friend's → [input]
+18. at mom's → [input]
+19. from the doctor → [input]
+20. from my friend → [input]
+
+SUBSECTION: Tricky (21–40)
+21. without any money → [input]
+22. without my ID → [input]
+23. without a reason → [input]
+24. from the airport → [input]
+25. from the train station → [input]
+26. from the gym → [input]
+27. to the airport → [input]
+28. to the train station → [input]
+29. into the room → [input]
+30. out of the house → [input]
+31. at the boss's → [input]
+32. at the dentist's → [input]
+33. from the dentist → [input]
+34. from my parents' → [input]
+35. without a problem → [input]
+36. without time → [input]
+37. from middle of city → [input]
+38. to center of Prague → [input]
+39. from Czech Republic → [input]
+40. to Czech Republic → [input]
+```
+
+##### Part B: Fill the Correct Preposition
+```markdown
+SECTION NUMBER: B
+ICON: Route
+TITLE: Fill the Correct Preposition
+HINT: Use only: bez / do / z / od / u
+
+SUBSECTION: Original (1–10)
+1. Jdu ___ práce.
+2. Jsem ___ doktora.
+3. Jdu ___ doktora. (HINT: from)
+4. Jsem ___ Prahy.
+5. Jdu ___ Prahy.
+6. Jdu ___ kamaráda.
+7. Jdu ___ kamaráda. (HINT: from)
+8. Čaj ___ cukru.
+9. Voda ___ kohoutku.
+10. Jdu ___ obchodu.
+
+SUBSECTION: Tricky (11–20)
+11. Jsem ___ mámy.
+12. Jdu ___ mámy.
+13. Jdu ___ mámy. (HINT: from)
+14. Jsem ___ práce.
+15. Jdu ___ práce. (HINT: from)
+16. Jsem ___ hotelu.
+17. Vracím se ___ restaurace.
+18. Voda je ___ lednice.
+19. Jdu ___ centra.
+20. Jdu ___ centra města.
+```
+
+##### Part C: Movement or Location?
+```markdown
+SECTION NUMBER: C
+ICON: Shuffle
+TITLE: Movement or Location?
+HINT: Write: movement or location
+
+SUBSECTION: Original (1–10)
+1. jdu do práce → [input]
+2. jsem v práci → [input]
+3. jdu do školy → [input]
+4. jsem ve škole → [input]
+5. jdu do restaurace → [input]
+6. jsem v restauraci → [input]
+7. jsem u kamaráda → [input]
+8. jdu ke kamarádovi → [input]
+9. jsem u doktora → [input]
+10. jdu k doktorovi → [input]
+
+SUBSECTION: Tricky (11–20)
+11. jsem z práce → [input]
+12. jdu z práce → [input]
+13. jsem z Prahy → [input]
+14. jdu do Prahy → [input]
+15. jsem u sebe → [input]
+16. jdu do centra → [input]
+17. jsem v centru → [input]
+18. jsem u nádraží → [input]
+19. jdu do nemocnice → [input]
+20. jsem v nemocnici → [input]
+```
+
+##### Part D: Fill the Correct Form
+```markdown
+SECTION NUMBER: D
+ICON: Calculator
+TITLE: Fill the Correct Form
+
+SUBSECTION: Original (1–20)
+1. pět ___ (student)
+2. šest ___ (doktor)
+3. deset ___ (autobus)
+4. osm ___ (auto)
+5. pět ___ (město)
+6. tři ___ (kamarád)
+7. čtyři ___ (hodina)
+8. pět ___ (hodina)
+9. pět ___ (minuta)
+10. deset ___ (koruna)
+11. hodně ___ (peníze)
+12. málo ___ (čas)
+13. trochu ___ (voda)
+14. spousta ___ (práce)
+15. několik ___ (den)
+16. několik ___ (týden)
+17. hodně ___ (lidí)
+18. málo ___ (lidí)
+19. trochu ___ (cukr)
+20. hodně ___ (jídlo)
+
+SUBSECTION: Tricky (21–40)
+21. pět ___ (žena)
+22. pět ___ (dítě)
+23. pět ___ (člověk)
+24. deset ___ (rok)
+25. několik ___ (minuta)
+26. spousta ___ (věc)
+27. hodně ___ (informace)
+28. málo ___ (energie)
+29. trochu ___ (mléko)
+30. hodně ___ (kafe)
+31. pět ___ (okno)
+32. pět ___ (místo)
+33. deset ___ (pivo)
+34. několik ___ (město)
+35. málo ___ (sůl)
+36. trochu ___ (chléb)
+37. spousta ___ (problém)
+38. hodně ___ (otázka)
+39. několik ___ (student)
+40. pět ___ (pes)
+```
+
+##### Part E: Make the Full Phrase
+```markdown
+SECTION NUMBER: E
+ICON: Package
+TITLE: Make the Full Phrase
+
+SUBSECTION: Original (1–10)
+1. a bottle of water → [input]
+2. a bottle of wine → [input]
+3. a glass of water → [input]
+4. a cup of coffee → [input]
+5. a kilo of apples → [input]
+6. a kilo of rice → [input]
+7. a piece of cheese → [input]
+8. a piece of chicken → [input]
+9. a lot of fruit → [input]
+10. a little bit of bread → [input]
+
+SUBSECTION: Tricky (11–20)
+11. a pack of sugar → [input]
+12. a box of tea → [input]
+13. a slice of pizza → [input]
+14. a bowl of soup → [input]
+15. a plate of pasta → [input]
+16. a liter of milk → [input]
+17. a kilogram of beef → [input]
+18. a handful of peanuts → [input]
+19. a bunch of keys → [input]
+20. a piece of advice → [input]
+```
+
+##### Part F: Translate to Czech
+```markdown
+SECTION NUMBER: F
+ICON: MessagesSquare
+TITLE: Translate to Czech
+
+SUBSECTION: Original (1–10)
+1. I need a bit of time. → [input]
+2. I don't have much time. → [input]
+3. I have a lot of work. → [input]
+4. I have no money. → [input]
+5. Five people are here. → [input]
+6. I bought a kilo of apples. → [input]
+7. I want a bottle of water. → [input]
+8. We need several days. → [input]
+9. I have five minutes. → [input]
+10. I have ten crowns. → [input]
+
+SUBSECTION: Tricky (11–20)
+11. I don't have any energy today. → [input]
+12. I need a bit of help. → [input]
+13. I have a lot of questions. → [input]
+14. I don't have enough sleep. → [input]
+15. I drank a glass of water. → [input]
+16. I bought two bottles of water and one bottle of wine. → [input]
+17. I have five minutes and then I'm leaving. → [input]
+18. Except Friday, I'm busy every day. → [input]
+19. During the week I have little time, but on weekends I have more. → [input]
+20. Without your phone number, I can't call you. → [input]
+```
+
+##### Part G: Translate to Czech
+```markdown
+SECTION NUMBER: G
+ICON: MessagesSquare
+TITLE: Translate to Czech
+
+SUBSECTION: Original (1–10)
+1. I'm afraid of that dog. → [input]
+2. I'm afraid of spiders. → [input]
+3. I'll ask my friend. → [input]
+4. I'll ask the doctor. → [input]
+5. Without your help, I can't do it. → [input]
+6. Except Monday, I'm free. → [input]
+7. During the week I don't have time. → [input]
+8. According to the map, it's near the center. → [input]
+9. Instead of coffee, I want tea. → [input]
+10. Without good sleep, I'm tired. → [input]
+
+SUBSECTION: Tricky (11–20)
+11. I'm not afraid of dogs, but I'm afraid of heights. → [input]
+12. I'll ask my boss about it. → [input]
+13. Without any reason, he left. → [input]
+14. According to him, it's not possible. → [input]
+15. Instead of going to work, I'm going to the doctor. → [input]
+16. During the whole week I didn't have time. → [input]
+17. Except my friend, nobody knows. → [input]
+18. I'm afraid of making mistakes. → [input]
+19. Without coffee, I'm not functional. → [input]
+20. According to the schedule, we start at 9. → [input]
+```
+
+##### Part H: Build the Phrase with an Adjective
+```markdown
+SECTION NUMBER: H
+ICON: Users
+TITLE: Build the Phrase with an Adjective
+
+SUBSECTION: Original (1–9)
+1. without good coffee → [input]
+2. without cold water → [input]
+3. without my phone → [input]
+4. without your car → [input]
+5. from the new office → [input]
+6. to the big city (movement) → [input]
+7. a lot of good people → [input]
+8. a lot of fresh apples → [input]
+9. a bottle of good wine → [input]
+
+SUBSECTION: Tricky (10–18)
+10. without any free time → [input]
+11. without the right information → [input]
+12. without my old passport → [input]
+13. from the biggest city in the country → [input]
+14. to a smaller town (movement) → [input]
+15. a lot of new students → [input]
+16. a little bit of hot soup → [input]
+17. without your last message → [input]
+18. during the whole long weekend → [input]
+```
+
+##### Part I: Pronouns (Genitive)
+```markdown
+SECTION NUMBER: I
+ICON: StickyNote
+TITLE: Pronouns (Genitive)
+
+SUBSECTION: Personal Pronouns (1–10)
+1. bez ___ (já) → without me
+2. kromě ___ (ty) → except you
+3. kolem ___ (on) → around him
+4. mezi ___ (oni) → among them
+5. od ___ (vy) → from you
+6. u ___ (my) → at our place
+7. podle ___ (on) → according to him
+8. místo ___ (oni) → instead of them
+9. během ___ (ona) → during her
+10. u ___ (vy - possessive) → at your place
+
+SUBSECTION: Demonstrative & Interrogative (11–25)
+11. kolem ___ (ten) → around that
+12. bez ___ (ty) → without you
+13. kromě ___ (já) → except me
+14. u ___ (ona) → at her place
+15. mezi ___ (oni) → among them
+16. podle ___ (to) → according to that
+17. kolem ___ (ta) → around that (fem)
+18. kromě ___ (ti) → except those
+19. místo ___ (ten) → instead of that
+20. během ___ (to) → during that
+21. od ___ (ten) → from that
+22. z ___ (ta) → from that (fem)
+23. do ___ (ti) → to those
+24. u ___ (ta) → at that (fem)
+25. kolem ___ (ty/ta) → around those
+
+SUBSECTION: Interrogative Pronouns (26–30)
+26. bez ___ (kdo) → without whom
+27. kromě ___ (co) → except what
+28. od ___ (kdo) → from whom
+29. podle ___ (který - masc) → according to which
+30. kolem ___ (která) → around which (fem)
+
+SUBSECTION: Negative/Indefinite (31–45)
+31. podle ___ (který - neut) → according to which
+32. mezi ___ (kteří) → among which (plural)
+33. u ___ (který - masc) → at which
+34. kolem ___ (který - masc) → around which
+35. kromě ___ (které - plural) → except which
+36. bez ___ (někdo) → without someone
+37. kromě ___ (nikdo) → except no one
+38. kolem ___ (něco) → around something
+39. místo ___ (nic) → instead of nothing
+40. bez ___ (nikdo) → without no one
+41. kromě ___ (nic) → except nothing
+42. bez ___ (žádný - masc) → without any
+43. kromě ___ (žádní) → except any (plural)
+44. kolem ___ (žádná) → around any (fem)
+45. podle ___ (žádné - neut) → according to no
+
+SUBSECTION: Mixed Practice (46–50)
+46. I'm afraid of ___ (pavouci - spiders)
+47. I'm afraid of ___ (chyby - mistakes)
+48. I'll ask ___ (můj kamarád)
+49. I'll ask ___ (doktor)
+50. I'm coming from ___ (práce)
+```
+
+---
+
+## 2. Layout & Component Specs
+
+### Global Layout
+```css
+Max Width: 1400px
+Container Padding: 60px 40px 80px
+Background: Fixed gradient overlay
+Z-index layers:
+  - Background: 0
+  - Content: 1
+```
+
+### Section Order (Top to Bottom)
+1. Study Guide Container
+2. Practice Worksheet Container
+
+### Component Types
+
+#### Card Components
+```
+.section-card
+- Background: rgba(255, 255, 255, 0.03)
+- Border: 1px solid rgba(255, 255, 255, 0.08)
+- Border Radius: 24px
+- Padding: 40px
+- Margin Bottom: 40px
+- Backdrop Filter: blur(20px)
+
+.guide-card
+- Same as section-card
+- Additional variants:
+  - .highlight-card (purple gradient)
+  - .warning-card (red gradient)
+  - .method-card (green gradient)
+  - .cheatsheet-card (yellow gradient)
+```
+
+#### Grid Layouts
+```
+.grid-2col
+- Grid: repeat(auto-fit, minmax(280px, 1fr))
+- Gap: 16px 24px
+
+.grid-3col
+- Grid: repeat(auto-fit, minmax(200px, 1fr))
+- Gap: 14px 20px
+
+.grid-1col
+- Flex column
+- Gap: 14px
+
+.steps-grid
+- Grid: repeat(auto-fit, minmax(250px, 1fr))
+- Gap: 24px
+
+.use-cases-grid
+- Grid: repeat(auto-fit, minmax(280px, 1fr))
+- Gap: 24px
+
+.gender-forms
+- Grid: repeat(auto-fit, minmax(280px, 1fr))
+- Gap: 20px
+```
+
+#### Input Groups
+```
+.input-group
+- Display: flex
+- Align: center
+- Gap: 8px
+- Font Size: 15px
+
+input[type="text"]
+- Default Width: flex 1
+- .inline-input: 80px fixed
+- .small-input: 120px fixed
+```
+
+### Responsive Breakpoints
+```
+Mobile: max-width 768px
+- Grid columns → 1
+- Padding: 40px 20px
+- Section padding: 24px
+- Section number: 48px x 48px
+```
+
+### Spacing Scale
+```
+Section margins: 40-80px
+Card padding: 40px (desktop), 24px (mobile)
+Grid gaps: 12-24px
+Input gaps: 8-16px
+Icon gaps: 10-20px
+```
+
+---
+
+## 3. Visual Design Specs
+
+### Color Palette
+
+#### Primary Colors
+```css
+--primary-blue: #415BD2
+--primary-purple: #944BEC
+--gradient-primary: linear-gradient(135deg, #415BD2 0%, #944BEC 100%)
+```
+
+#### Accent Colors
+```css
+--accent-pink: #EC4B9B
+--accent-cyan: #4BBFEC
+--accent-orange: #EC944B
+--accent-yellow: #ECBF4B
+--accent-green: #4BEC9B
+--accent-red: #EC4B5B
+```
+
+#### Neutral Colors
+```css
+--white: #FFFFFF
+--white-90: rgba(255, 255, 255, 0.9)
+--white-85: rgba(255, 255, 255, 0.85)
+--white-75: rgba(255, 255, 255, 0.75)
+--white-70: rgba(255, 255, 255, 0.7)
+--white-60: rgba(255, 255, 255, 0.6)
+--white-50: rgba(255, 255, 255, 0.5)
+--white-40: rgba(255, 255, 255, 0.4)
+--white-30: rgba(255, 255, 255, 0.3)
+--white-15: rgba(255, 255, 255, 0.15)
+--white-10: rgba(255, 255, 255, 0.1)
+--white-08: rgba(255, 255, 255, 0.08)
+--white-05: rgba(255, 255, 255, 0.05)
+--white-03: rgba(255, 255, 255, 0.03)
+--black: #000000
+--black-30: rgba(0, 0, 0, 0.3)
+--black-20: rgba(0, 0, 0, 0.2)
+```
+
+#### Interactive States
+```css
+--success-green: #4BEC9B
+--success-green-bg: rgba(75, 236, 155, 0.1)
+--error-red: #EC4B5B
+--error-red-bg: rgba(236, 75, 91, 0.1)
+```
+
+### Typography
+
+#### Font Family
+```css
+Primary: 'Clash Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif
+```
+
+#### Font Sizes & Weights
+```css
+/* Hero */
+.hero-title: clamp(48px, 8vw, 96px), weight: 600
+.hero-subtitle: clamp(24px, 4vw, 42px), weight: 400
+
+.study-hero-title: clamp(40px, 7vw, 72px), weight: 600
+.study-hero-subtitle: clamp(18px, 3vw, 28px), weight: 400
+
+/* Section Headers */
+.section-header h2: clamp(24px, 3vw, 32px), weight: 600
+.guide-header h2: clamp(28px, 4vw, 36px), weight: 600
+
+/* Subsections */
+.subsection-title: 18px, weight: 600
+.trigger-title: 22px, weight: 600
+.forms-title: 24px, weight: 600
+
+/* Body */
+.large-text: clamp(18px, 2.5vw, 24px), weight: 400
+.concept-intro p: 15px, weight: 400
+.input-group: 15px, weight: 400
+.step-content h4: 16px, weight: 600
+.step-content p: 14px, weight: 400
+
+/* Small */
+.hint: 13px, italic, weight: 400
+.stat-label: 13px, weight: 400, uppercase
+.prep-meaning: 13px, weight: 400, uppercase
+```
+
+### Card Styling
+
+#### Base Card
+```css
+background: rgba(255, 255, 255, 0.03)
+border: 1px solid rgba(255, 255, 255, 0.08)
+border-radius: 24px
+padding: 40px
+backdrop-filter: blur(20px)
+```
+
+#### Card Variants
+```css
+.highlight-card
+background: linear-gradient(135deg, rgba(65, 91, 210, 0.08) 0%, rgba(148, 75, 236, 0.08) 100%)
+border-color: rgba(148, 75, 236, 0.3)
+
+.warning-card
+background: linear-gradient(135deg, rgba(236, 75, 75, 0.05) 0%, rgba(236, 135, 75, 0.05) 100%)
+border-color: rgba(236, 75, 75, 0.2)
+
+.method-card
+background: linear-gradient(135deg, rgba(75, 236, 148, 0.05) 0%, rgba(75, 191, 236, 0.05) 100%)
+border-color: rgba(75, 236, 148, 0.2)
+
+.cheatsheet-card
+background: linear-gradient(135deg, rgba(236, 191, 75, 0.05) 0%, rgba(236, 148, 75, 0.05) 100%)
+border-color: rgba(236, 191, 75, 0.2)
+```
+
+#### Hover States
+```css
+.section-card:hover
+background: rgba(255, 255, 255, 0.05)
+border-color: rgba(255, 255, 255, 0.12)
+transform: translateY(-2px)
+```
+
+### Buttons & Interactive Elements
+
+#### Primary Button
+```css
+.btn-check
+background: linear-gradient(135deg, #415BD2 0%, #944BEC 100%)
+color: #fff
+padding: 14px 28px
+border-radius: 12px
+font-size: 16px
+font-weight: 600
+box-shadow: 0 4px 16px rgba(148, 75, 236, 0.3)
+
+:hover
+transform: translateY(-2px)
+box-shadow: 0 6px 24px rgba(148, 75, 236, 0.4)
+```
+
+#### Secondary Button
+```css
+.btn-reset
+background: rgba(255, 255, 255, 0.05)
+border: 1px solid rgba(255, 255, 255, 0.15)
+color: rgba(255, 255, 255, 0.7)
+padding: 14px 28px
+border-radius: 12px
+
+:hover
+background: rgba(255, 255, 255, 0.08)
+border-color: rgba(255, 255, 255, 0.25)
+color: #fff
+```
+
+#### Input Fields
+```css
+input[type="text"]
+background: rgba(0, 0, 0, 0.3)
+border: 1px solid rgba(255, 255, 255, 0.15)
+border-radius: 8px
+padding: 10px 14px
+color: #fff
+font-size: 14px
+
+:focus
+background: rgba(65, 91, 210, 0.15)
+border-color: #415BD2
+box-shadow: 0 0 0 3px rgba(65, 91, 210, 0.2)
+
+.correct
+background: rgba(75, 236, 155, 0.1)
+border-color: #4BEC9B
+color: #4BEC9B
+
+.incorrect
+background: rgba(236, 75, 91, 0.1)
+border-color: #EC4B5B
+color: #EC4B5B
+```
+
+### Icons
+
+#### Icon Library
+```
+Lucide React icons
+All icons: size={24} (section headers)
+           size={20} (buttons)
+           size={16} (status indicators)
+```
+
+#### Icon List
+```
+BookOpen - Study guide hero
+Info - What is Genitive
+Lightbulb - When to use / Key insights
+MapPin - Movement vs Location
+Route - Prepositions / Fill preposition
+Hash - Numbers
+MessageCircle - Verbs
+Users - Forms / Adjectives
+ArrowRight - Movement examples
+ArrowLeft - Origin
+X - Negation
+Clock - Time
+Zap - Advanced/Boss fight
+Calculator - Fill correct form
+Package - Make full phrase
+MessagesSquare - Translate sections
+StickyNote - Pronouns / Notes
+Check - Correct answers
+X - Incorrect answers
+AlertCircle - Results summary
+Award - Exam tips
+AlertTriangle - Warnings
+Languages - Translate
+Shuffle - Movement or location
+```
+
+### Badges & Labels
+
+#### Section Number Badge
+```css
+width: 56px
+height: 56px
+background: linear-gradient(135deg, #415BD2 0%, #944BEC 100%)
+border-radius: 16px
+font-size: 28px
+font-weight: 700
+color: #fff
+```
+
+#### Step Number Badge
+```css
+width: 40px
+height: 40px
+background: linear-gradient(135deg, #415BD2 0%, #944BEC 100%)
+border-radius: 12px
+font-size: 20px
+font-weight: 700
+color: #fff
+```
+
+#### Gender Badges
+```css
+.badge.masculine
+background: rgba(65, 91, 210, 0.15)
+border: 1px solid rgba(65, 91, 210, 0.4)
+color: #8BA3FF
+
+.badge.feminine
+background: rgba(236, 75, 148, 0.15)
+border: 1px solid rgba(236, 75, 148, 0.4)
+color: #FF8BBF
+
+.badge.neuter
+background: rgba(148, 75, 236, 0.15)
+border: 1px solid rgba(148, 75, 236, 0.4)
+color: #B88BFF
+```
+
+---
+
+## 4. Structure & Hierarchy
+
+### Page Architecture
+```
+App.tsx
+├── Background Layer (fixed gradient)
+├── Study Guide Container
+│   └── StudyGuide.tsx component
+└── Practice Worksheet Container
+    └── PracticeWorksheet.tsx component
+```
+
+### Study Guide Hierarchy
+```
+StudyGuide Component
+├── Study Hero
+├── Section 1: What is Genitive (info icon, highlight card)
+├── Section 2: When to Use (lightbulb icon, highlight card)
+├── Section 3: Movement vs Location (mappin icon, method card)
+├── Section 4: Prepositions (route icon, cheatsheet card)
+├── Section 5: Numbers (hash icon, guide card)
+├── Section 6: Verbs (messagecircle icon, guide card)
+├── Section 7: Noun Forms (users icon, warning card)
+└── Section 8: Pronouns (users icon, guide card)
+```
+
+### Practice Worksheet Hierarchy
+```
+PracticeWorksheet Component
+├── Worksheet Hero
+├── Action Buttons Row
+├── Results Summary (conditional, shown after checking)
+├── Part A (languages icon)
+│   ├── Subsection: Original (1-20)
+│   └── Subsection: Tricky (21-40)
+├── Part B (route icon)
+│   ├── Hint text
+│   ├── Subsection: Original (1-10)
+│   └── Subsection: Tricky (11-20)
+├── Part C (shuffle icon)
+│   ├── Hint text
+│   ├── Subsection: Original (1-10)
+│   └── Subsection: Tricky (11-20)
+├── Part D (calculator icon)
+│   ├── Subsection: Original (1-20)
+│   └── Subsection: Tricky (21-40)
+├── Part E (package icon)
+│   ├── Subsection: Original (1-10)
+│   └── Subsection: Tricky (11-20)
+├── Part F (messagessquare icon)
+│   ├── Subsection: Original (1-10)
+│   └── Subsection: Tricky (11-20)
+├── Part G (messagessquare icon)
+│   ├── Subsection: Original (1-10)
+│   └── Subsection: Tricky (11-20)
+├── Part H (users icon)
+│   ├── Subsection: Original (1-9)
+│   └── Subsection: Tricky (10-18)
+└── Part I (stickynote icon)
+    ├── Subsection: Personal Pronouns (1-10)
+    ├── Subsection: Demonstrative (11-25)
+    ├── Subsection: Interrogative (26-30)
+    ├── Subsection: Negative/Indefinite (31-45)
+    └── Subsection: Mixed Practice (46-50)
+```
+
+### Content Order
+```
+1. Study Guide (educational content first)
+   - Appears at top of page
+   - 8 major sections
+   - Scrollable educational material
+
+2. Practice Worksheet (exercises second)
+   - Appears after study guide
+   - 9 parts (A-I)
+   - 248 total exercises
+   - Interactive with answer checking
+```
+
+### Z-Index Layers
+```
+0: Background gradient (fixed)
+1: Study guide content
+1: Practice worksheet content
+(No modals or overlays in current implementation)
+```
+
+---
+
+## 5. Interactive Features
+
+### Answer Checking System
+
+#### State Management
+```typescript
+// User answers stored in React state
+const [answers, setAnswers] = useState<Record<string, string>>({});
+
+// Results after checking
+const [results, setResults] = useState<CheckResults | null>(null);
+
+// Whether to show visual feedback
+const [showResults, setShowResults] = useState(false);
+```
+
+#### Validation Logic
+```typescript
+// Location: /src/utils/answerChecker.ts
+
+normalize(answer) {
+  - Trim whitespace
+  - Convert to lowercase
+  - Collapse multiple spaces
+  - Remove trailing punctuation
+}
+
+checkAnswer(id, userAnswer) {
+  - Fetch correct answer from ANSWER_KEY
+  - Normalize both
+  - Compare
+  - Handle arrays (multiple correct answers)
+  - Return boolean
+}
+
+checkAllAnswers(userAnswers) {
+  - Loop through all answer IDs
+  - Check each answer
+  - Calculate statistics
+  - Return CheckResults object
+}
+```
+
+#### Visual Feedback
+
+**Input States:**
+```css
+/* Correct */
+.correct
+- Green border (#4BEC9B)
+- Green background (rgba 0.1)
+- Green text
+- Checkmark icon appears
+
+/* Incorrect */
+.incorrect
+- Red border (#EC4B5B)
+- Red background (rgba 0.1)
+- Red text
+- X icon appears
+- Correct answer shown below
+```
+
+**Results Dashboard:**
+```
+Shows after clicking "Check My Answers"
+- Total answered / total questions
+- Number correct
+- Number incorrect
+- Accuracy percentage (correct/answered)
+- Completion percentage (answered/total)
+```
+
+#### User Actions
+```
+1. Type answers in input fields
+2. Click "Check My Answers" button
+   → Validates all answers
+   → Shows visual feedback
+   → Displays results summary
+3. Click "Reset All" button
+   → Clears all inputs
+   → Hides results
+   → Resets state
+```
+
+---
+
+## 6. Answer Key Database
+
+### Location
+```
+/src/data/answers.ts
+```
+
+### Format
+```typescript
+export const ANSWER_KEY = {
+  // Part A: Translate to Czech (40 exercises)
+  a1: "bez cukru",
+  a2: "bez soli",
+  // ... a40
+  
+  // Part B: Prepositions (20 exercises)
+  b1: "do",
+  b6: ["k", "ke"],  // Multiple accepted answers
+  // ... b20
+  
+  // Part C: Movement or Location (20 exercises)
+  c1: "movement",
+  c2: "location",
+  // ... c20
+  
+  // Part D: Correct Form (40 exercises)
+  d1: "studentů",
+  d2: "doktorů",
+  // ... d40
+  
+  // Part E: Full Phrase (20 exercises)
+  e1: "láhev vody",
+  // ... e20
+  
+  // Part F: Translate Sentences (20 exercises)
+  f1: "Potřebuji trochu času.",
+  // ... f20
+  
+  // Part G: Complex Translations (20 exercises)
+  g1: "Bojím se toho psa.",
+  // ... g20
+  
+  // Part H: Adjectives (18 exercises)
+  h1: "bez dobré kávy",
+  // ... h18
+  
+  // Part I: Pronouns (50 exercises)
+  i101: "mě",
+  i102: "tě",
+  // ... i150
+} as const;
+```
+
+### Total Count
+```
+Part A: 40 exercises
+Part B: 20 exercises
+Part C: 20 exercises
+Part D: 40 exercises
+Part E: 20 exercises
+Part F: 20 exercises
+Part G: 20 exercises
+Part H: 18 exercises
+Part I: 50 exercises
+─────────────────
+TOTAL: 248 exercises
+```
+
+---
+
+## File Structure
+
+```
+/src
+├── /app
+│   ├── App.tsx                          # Main app component
+│   └── /components
+│       ├── StudyGuide.tsx               # Study guide component
+│       ├── PracticeWorksheet.tsx        # Practice worksheet with validation
+│       └── /figma
+│           └── ImageWithFallback.tsx    # Image component
+│
+├── /data
+│   └── answers.ts                       # All 248 correct answers
+│
+├── /utils
+│   └── answerChecker.ts                 # Validation logic
+│
+├── /styles
+│   ├── index.css                        # Main imports
+│   ├── fonts.css                        # Clash Grotesk font
+│   ├── tailwind.css                     # Tailwind setup
+│   ├── theme.css                        # CSS variables
+│   ├── worksheet.css                    # Main styles
+│   └── answer-checking.css              # Answer feedback styles
+│
+└── /imports
+    └── (Figma assets)
+```
+
+---
+
+## Implementation Checklist
+
+### Study Guide ✅
+- [ ] Study hero with icon
+- [ ] Section 1: What is Genitive (5 use case cards)
+- [ ] Section 2: When to Use (5 step cards)
+- [ ] Section 3: Movement vs Location (comparison table)
+- [ ] Section 4: Prepositions (12 preposition cards)
+- [ ] Section 5: Numbers (visual rules + examples)
+- [ ] Section 6: Verbs (8 verb cards)
+- [ ] Section 7: Noun Forms (gender tables + plural + boss fight)
+- [ ] Section 8: Pronouns (complete pronoun table)
+
+### Practice Worksheet ✅
+- [ ] Worksheet hero
+- [ ] Action buttons (Check + Reset)
+- [ ] Results summary (conditional)
+- [ ] Part A: 40 translation exercises
+- [ ] Part B: 20 preposition exercises
+- [ ] Part C: 20 movement/location exercises
+- [ ] Part D: 40 form exercises
+- [ ] Part E: 20 phrase exercises
+- [ ] Part F: 20 sentence translations
+- [ ] Part G: 20 complex translations
+- [ ] Part H: 18 adjective exercises
+- [ ] Part I: 50 pronoun exercises
+
+### Answer Checking ✅
+- [ ] Answer key (248 answers)
+- [ ] Validation logic
+- [ ] Visual feedback (green/red)
+- [ ] Results calculation
+- [ ] Reset functionality
+
+### Styling ✅
+- [ ] Dark gradient background
+- [ ] Glassmorphism cards
+- [ ] Clash Grotesk typography
+- [ ] Responsive layouts
+- [ ] Print-ready styles
+- [ ] Interactive states
+- [ ] Answer feedback colors
+
+---
+
+## Export Formats Available
+
+This spec is available in:
+1. ✅ Markdown (this file)
+2. ✅ JSON (see CURSOR_DATA_EXPORT.json)
+3. ✅ Source code (all files in /src)
+
+---
+
+## Notes for Cursor
+
+1. **All content is complete** - 248 exercises with answers
+2. **Fully interactive** - Answer checking works client-side
+3. **No backend needed** - Pure React + TypeScript
+4. **Mobile responsive** - Works on all screen sizes
+5. **Print-ready** - Has @media print styles
+6. **Modern design** - Glassmorphism, gradients, beautiful UX
+7. **Educational** - Study guide before practice
+8. **Czech B2 level** - Genitive case focus
+
+To build from scratch, follow the structure above and use the existing code as reference. All files are documented and ready to use.
